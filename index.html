@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="/assets/book.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaquerys.css">
+</head>
+<body>
+    <header>
+        <nav id="desktop-nav">
+            <div class="logo">Adam Reinwalds</div>
+            <div>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <nav id="hamburger-nav">
+            <div class="logo">Adam Reinwalds</div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                    <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="profile">
+            <div class="section_pic-container">
+                <img src="./Pictures/chicken.avif" alt="chicken picture">
+            </div>
+            <div class="section_text">
+                <p class_text_p1>Hello Im</p>
+                <h1 class="title">Adam Reinwalds</h1>
+                <p class="section_text_p2">.NET Developer</p>
+                <div class="btn-container">
+                    <a href="/cv/cv.html" class="primary-button">Download CV</a>
+                    <a href="/#contact" class="primary-button">Contact</a>
+                </div>
+                <div class="socials-container">
+                    <a href="https://www.linkedin.com/in/adam-reinwalds-737783201/" target="_blank"><img src="/assets/linkedin.png" alt="my linkedin" class="icon"></a>
+                    <a href="https://github.com/AdamReinwalds" target="_blank"><img src="/assets/github.png" alt="my github" class="icon"></a>                         
+                </div>                
+            </div>
+        </section>
+        <section id="about">
+            <p class="section_text_p1">Get To Know More</p>
+            <h1 class="title">About Me</h1>
+            <div class="section-container">
+                <div class="section_pic-container">
+                    <img src="/assets/profile.jpg" alt="Profile Picture" class="about-pic">
+                </div>
+                <div class="about-details-container">
+                    <div class="about-containers">
+                        <div class="details-container">
+                            <img src="/assets/experience.png" alt="experience icon" class="icon">
+                            <h3>Experience</h3>
+                            <p>Nothing yet <br>lol</p>
+                        </div>
+                        <div class="details-container">
+                            <img src="/assets/education.png" alt="education icon" class="icon">
+                            <h3>Education</h3>
+                            <p>On going educatin in <br>.NET Development</p>
+                        </div>
+                    </div>
+                    <div class="text-container">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem enim eos aut, neque deleniti beatae cupiditate at provident itaque, libero ipsa laudantium repellendus quisquam! Vel quaerat nam rem unde reiciendis velit ullam? Laboriosam quia, nobis facere, blanditiis id ducimus at deleniti eos nihil eaque nesciunt alias, omnis fugit minima numquam?</p>
+                    </div>
+                </div>
+                <a href="#experience">
+                    <img src="/assets/arrow.png" alt="arrow picture" class="icon-arrow" >
+                </a>
+            </div>
+        </section>
+        <section id="experience">
+            <p class="section_text_p1">Explore My</p>
+            <h1 class="title">Experience</h1>
+            <div class="experience-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+        
+        <script src="script.js"></script>
+
+    </main>
+    <footer>
+
+    </footer>
+    
+</body>
+</html>
