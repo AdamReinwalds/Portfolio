@@ -21,9 +21,9 @@ header a {
     display: flex;
 }
 
-#desktop-nav, #hamburger-nav {
-    background-color: hsl(39, 100%, 35%);
-}
+/* #desktop-nav, #hamburger-nav {
+    background-color: 
+} */
 
 nav {
     justify-content: space-around;
@@ -37,12 +37,12 @@ nav {
     font-size: 1.5rem;
 }
 
-header a {
+a {
     color: black;
     text-decoration: none;
 }
 
-header a:hover {
+a:hover {
     color: grey;
     text-decoration: underline;
     text-underline-offset: 0.5rem;
@@ -136,10 +136,10 @@ header a:hover {
 
 /* Hero section */
 section {
-    padding: 4vh;
+    padding: 4vh 80px;
     height: 96vh;
-    margin: 0 10rem;
-    box-sizing: border-box;
+    margin: 0 auto;
+    max-width: 1200px;
     min-height: fit-content;
 }
 
@@ -173,6 +173,7 @@ section {
 
 .section_text_p1 {
     text-align: center;
+    font-size: 1.5rem;
 }
 
 .section_text_p2 {
@@ -185,19 +186,19 @@ section {
     margin: 20px;
     border-style: none;
     border-radius: 80px;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 30px;
-    background-color: hsl(39, 100%, 35%);
     color: black;
     display: inline-block;
     box-shadow: 5px 5px 5px lightgray;
     text-decoration: none;
     width: 17rem;
+    border: rgb(53, 53, 53) solid 0.1rem;
 }
 
 .primary-button:hover {
     cursor: pointer;
-    background-color: hsl(39, 100%, 45%);
+    background-color: hsl(0, 0%, 70%);
 }
 
 
@@ -245,7 +246,7 @@ section {
 
 .icon-arrow {
     position: absolute;
-    right: -5rem;
+    right: 0;
     bottom: 2.5rem;
 }
 
@@ -268,3 +269,174 @@ section {
     width: 400px;
     margin: auto 0;
 }
+
+/* Experience section */
+
+#experience {
+    position: relative;
+}
+
+.experience-subtitle {
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+}
+
+.experience-details-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;    
+}
+
+
+.article-container {
+    display: flex;
+    text-align: initial;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2.5rem;
+    justify-content: space-around;
+}
+
+article {
+    display: flex;
+    width: 10rem;
+    gap: 1.5rem;
+}
+
+article .icon {
+    cursor: default;
+}
+
+/* Project section */
+
+#projects {
+    position: relative;
+}
+
+.project-image {
+    border-radius: 2rem;
+    width: 90%;
+    height: 90%;
+}
+
+.project-title {
+    margin: 1rem;
+    color: black;
+}
+
+/* Contact */
+
+#contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 80vh;
+}
+
+.contact-info-upper-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    background-color: rgb(250, 250, 250);
+    margin: 2rem auto;
+    padding: 0.5rem;
+}
+
+.contact-info-lower-container {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-info-container a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+}
+
+.contact-icon {
+    height: 40px;
+} 
+
+.contact-info-container p {
+    font-size: larger;
+}
+
+.contact-info-upper-container_p {
+    margin-top: 8px;
+    font-size: 1.2rem;
+    text-decoration: underline ;
+    text-align: center;
+}
+
+/* Contact_Form */
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form-container p {
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+.form{
+    margin-top: 10px;
+    display: flex; 
+}
+.form div {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+input {
+    margin-bottom: 10px;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 8px;
+}
+textarea {
+    margin-bottom: 10px;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    resize: none;
+    border: rgb(118, 118, 118) inset 2px;
+}
+
+#message {
+    height: 95.234px;
+}
+
+#submit:hover {
+    cursor: pointer;
+}
+
+
+/* Footer Section */
+
+footer {
+    height: 16vh;
+}
+.nav-links-container {
+    display: flex;
+    justify-content: center;
+}
+footer nav {
+    height: 8vh;
+}
+footer p {
+    text-align: center;
+    bottom: 0;
+}
+
+
+
+
+
