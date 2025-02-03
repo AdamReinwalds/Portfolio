@@ -1,251 +1,364 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
-    <link rel="icon" type="image/x-icon" href="/Portfolio/assets/book-wXpvC12U.png">
-    <script defer src="script.js"></script>
-
-  <link rel="stylesheet" crossorigin href="/Portfolio/assets/index-DIVYBrkf.css">
-</head>
-<body>
+    <link rel="icon" type="image/x-icon" href="/Portfolio/assets/book-wXpvC12U.png" />
+    <script type="module" crossorigin src="/Portfolio/assets/index-DqlYbXRY.js"></script>
+    <link rel="stylesheet" crossorigin href="/Portfolio/assets/index-DIVYBrkf.css">
+  </head>
+  <body>
     <header>
-        <nav id="desktop-nav">
-            <div class="logo">Adam Reinwalds</div>
-            <div>
-                <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-        <nav id="hamburger-nav">
-            <div class="logo">Adam Reinwalds</div>
-            <div class="hamburger-menu">
-                <div class="hamburger-icon" onclick="toggleMenu()">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <div class="menu-links">
-                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                    <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-                    <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-                </div>
-            </div>
-        </nav>
+      <nav id="desktop-nav">
+        <div class="logo">Adam Reinwalds</div>
+        <div>
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <nav id="hamburger-nav">
+        <div class="logo">Adam Reinwalds</div>
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          </div>
+        </div>
+      </nav>
     </header>
     <main>
-        <section id="profile">
-            <div class="section_pic-container">
-                <img src="/Portfolio/assets/profile-IQlFS8Pp.jpg" alt="chicken picture">
-            </div>
-            <div class="section_text">
-                <p class_text_p1>Hello I'm</p>
-                <h1 class="title">Adam Reinwalds</h1>
-                <p class="section_text_p2">.NET Developer</p>
-                <div class="btn-container">
-                    <a href="/assets/CV.pdf" target="_blank" class="primary-button">Download CV</a>
-                    <a href="/#contact" class="primary-button">Contact</a>
-                </div>
-                <div class="socials-container">
-                    <a href="https://www.linkedin.com/in/adam-reinwalds-737783201/" target="_blank"><img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3e%3cpath%20d='M20%203H4a1%201%200%200%200-1%201v16a1%201%200%200%200%201%201h16a1%201%200%200%200%201-1V4a1%201%200%200%200-1-1zM8.339%2018.337H5.667v-8.59h2.672v8.59zM7.003%208.574a1.548%201.548%200%201%201%200-3.096%201.548%201.548%200%200%201%200%203.096zm11.335%209.763h-2.669V14.16c0-.996-.018-2.277-1.388-2.277-1.39%200-1.601%201.086-1.601%202.207v4.248h-2.667v-8.59h2.56v1.174h.037c.355-.675%201.227-1.387%202.524-1.387%202.704%200%203.203%201.778%203.203%204.092v4.71z'/%3e%3c/svg%3e" alt="my linkedin" class="icon"></a>
-                    <a href="https://github.com/AdamReinwalds" target="_blank"><img src="/Portfolio/assets/github-DzGq4Dyy.png" alt="my github" class="icon"></a>                         
-                </div>                
-            </div>
-        </section>
+      <section id="profile">
+        <div class="section_pic-container">
+          <img src="/Portfolio/assets/profile-IQlFS8Pp.jpg" alt="chicken picture" />
+        </div>
+        <div class="section_text">
+          <p class_text_p1>Hello I'm</p>
+          <h1 class="title">Adam Reinwalds</h1>
+          <p class="section_text_p2">.NET Developer</p>
+          <div class="btn-container">
+            <a href="/assets/CV.pdf" target="_blank" class="primary-button"
+              >Download CV</a
+            >
+            <a href="/#contact" class="primary-button">Contact</a>
+          </div>
+          <div class="socials-container">
+            <a
+              href="https://www.linkedin.com/in/adam-reinwalds-737783201/"
+              target="_blank"
+              ><img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3e%3cpath%20d='M20%203H4a1%201%200%200%200-1%201v16a1%201%200%200%200%201%201h16a1%201%200%200%200%201-1V4a1%201%200%200%200-1-1zM8.339%2018.337H5.667v-8.59h2.672v8.59zM7.003%208.574a1.548%201.548%200%201%201%200-3.096%201.548%201.548%200%200%201%200%203.096zm11.335%209.763h-2.669V14.16c0-.996-.018-2.277-1.388-2.277-1.39%200-1.601%201.086-1.601%202.207v4.248h-2.667v-8.59h2.56v1.174h.037c.355-.675%201.227-1.387%202.524-1.387%202.704%200%203.203%201.778%203.203%204.092v4.71z'/%3e%3c/svg%3e" alt="my linkedin" class="icon"
+            /></a>
+            <a href="https://github.com/AdamReinwalds" target="_blank"
+              ><img src="/Portfolio/assets/github-DzGq4Dyy.png" alt="my github" class="icon"
+            /></a>
+          </div>
+        </div>
+      </section>
 
-        <section id="about">
-            <p class="section_text_p1">Get To Know More</p>
-            <h1 class="title">About Me</h1>
-            <div class="section-container">
-                <div class="section_pic-container">
-                    <img src="/Portfolio/assets/profile-IQlFS8Pp.jpg" alt="Profile Picture" class="about-pic">
-                </div>
-                <div class="about-details-container">
-                    <div class="about-containers">
-                        <div class="details-container">
-                            <img src="/Portfolio/assets/experience-3WH6S_oM.png" alt="experience icon" class="icon">
-                            <h3>Experience</h3>
-                            <p>Nothing yet<br> LOL </p>
-                        </div>
-                        <div class="details-container">
-                            <img src="/Portfolio/assets/education-6a-NC3-L.png" alt="education icon" class="icon">
-                            <h3>Education</h3>
-                            <p>On going education in <br>.NET Development</p>
-                        </div>
-                    </div>
-                    <div class="text-container">
-                        <p>I have always had a strong interest in computers and software development, which has led me to a career where i can combine passion with profession. I am a driven and proactive individual who constalty strives to grow and learn new things, both profesionally and personally.</p>
-                    </div>
-                </div>
-                <a href="#experience">
-                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAcBJREFUSEuNVtGhgzAIPDbRTdpROkm7ib5Juoqb8AqSBBLS2h81Jhx3HFgiAIxvP9uhl7j761l3rEZvBwgENmAPAORB/Wq8lyc7FQO19YTdsHXO5QSYxfitX6WUKFhzTHnPSPtcruJXiVT3H5Hz175mMQVq1GxTTOsJ4A/AcR4bXLQwcANoz71ImAIQ8PyweYE1+L2BlAxpIfDGhBuYHgTeC/ue5cxFC4A3ALn2ILK2EXBjfUdrLm9hYPQT7y/gAUR2b1BpFHj91aaRge12NE8mhAVMB8ASVHSX+3nw0itD90YBn2Atsvzen2KK7tLhJXMBFyb7YN8AkHtPHPQSGQi4n/OK3uoWwgrW2hSpHgoyNEbnomY1taxYsBWZcLfhJNn74F0d4hwLo8L3hGUqukvW1UmWpGZOwMEnm9AmfmyEPvDNMhRZs6aDwIc1l9yv30c9rNF8AgbfLKsvfU/Is8oyH9JO7GHTbCwaiO1Xe+bDLs7ysQZjHzgHqk1FIg3fsYyIDid5MZuO3aSsX72kyGUpVLx+nxN1rw7/buIFia58TJJemk1q/ZPgbDqn2YCv0WiTVaTu7ZDEmM0rvz7pIfwDFrLpIUMRolAAAAAASUVORK5CYII=" alt="arrow picture" class="icon-arrow" >
-                </a>
+      <section id="about">
+        <p class="section_text_p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+          <div class="section_pic-container">
+            <img
+              src="/Portfolio/assets/profile-IQlFS8Pp.jpg"
+              alt="Profile Picture"
+              class="about-pic"
+            />
+          </div>
+          <div class="about-details-container">
+            <div class="about-containers">
+              <div class="details-container">
+                <img
+                  src="/Portfolio/assets/experience-3WH6S_oM.png"
+                  alt="experience icon"
+                  class="icon"
+                />
+                <h3>Experience</h3>
+                <p>
+                  Nothing yet<br />
+                  LOL
+                </p>
+              </div>
+              <div class="details-container">
+                <img
+                  src="/Portfolio/assets/education-6a-NC3-L.png"
+                  alt="education icon"
+                  class="icon"
+                />
+                <h3>Education</h3>
+                <p>On going education in <br />.NET Development</p>
+              </div>
             </div>
-        </section>
-        <section id="experience">
-            <p class="section_text_p1">Explore My</p>
-            <h1 class="title">Experience</h1>
-            <div class="experience-details-container">
-                <div class="about-containers">
-                    <div class="details-container">
-                        <h2 class="experience-subtitle">Frontend Development</h2>
-                        <div class="article-container">
-                            <article>
-                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAxlJREFUWEetWNFh4jAMfdokTHIwScMk9CahTAKdpNwkvshxYsmWbMMdX4XY1pPe05NTwuiHAITO4s4a77H8nf/ePyMxvfVx76sHGPm5gJoBUuD/EL+CRGW5FCte4Iz2CMIRAR/p5AeAbwBfMNBWPzlrTGH0s6c7IRwdWX0BOMNClaLZ4CjueOdzB3D01JeCJVDbqpGSAYqyKkCmjCtxAWgCwqQSb5fymc58AvS9tOmnyv5NyopqNDJ2umalNUZ/gnAw7SPpUlBmKtgB02K5S02kMvcF6ybsGGsN7UjDHICrH7ov+13U9dJz7MSeD+XKRtTXAMz/BshrKbA9nMYA5VU/SxaT3tSlozY6e+I8CThYlqE0JLkcmFwNl7HrWqSzxy7N2dr9hph7dlZVt/Cpdf+KMkuev0UwtmRTR4zoOTp1pPzSgJo7TshNKo9FbHdWWddNADY4FiwLlz9shmyqngpOBDy2m0Lp1Awmd5auXC5mmx0Jhlf2klypEzYoj0+d1eSED/ijqdjXRzBitw8mR+Xxcti+lsaYxKwB5W90XmbZZmgrFflhtzKNNFXHyQolvrWhCeZ+J01se7b1bTAG9SKoR1nsIJ7qXCX1ERV6AuFWgOJO2qZ61AwB7PINzalaqTEi2j72wRQI8zLrRKsKta1ReGLflmmorxJr/EIzHvV7vo/lWnKKhpyqqACllCaEeHDLP7giZaV2MBVDtnjSPKtBWxbBNPxYFzGxnefRbcnsE4FmIBj+patb4CobaqfYcxVjuFZLuVKcaeNW4JqWDUgIVjkpAfeQ7s1NV2o+dMGIOda7oOXeME3t1fjV+vWH+oIm2DUbND2/AlEfzSZ262A/KDpLS7juMn0Ii5vFKl55ttvBGIyiQmpMWCeYwjIWMn0fnIv9cuj5DbGRrt4Fuomx485+t0INrfB72YxAlxhMdrbe5N6bGWGjmQYp0JbCVNbmmR3RND2bZH3pc95cja3VBIm3QdbWr/2NNro3PYCQLme6pUdUN6ChVxvda0h5jn+mA+hNECMlaK4h758NnZMdt6t3jSUmV/0Fg2YwOBCCUXMAAAAASUVORK5CYII=" alt="check icon" class="icon">
-                                <div>
-                                    <h3>HTML</h3>
-                                    <p>Experienced</p>
-                                </div>
-                            </article>
-                            <article>
-                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAxlJREFUWEetWNFh4jAMfdokTHIwScMk9CahTAKdpNwkvshxYsmWbMMdX4XY1pPe05NTwuiHAITO4s4a77H8nf/ePyMxvfVx76sHGPm5gJoBUuD/EL+CRGW5FCte4Iz2CMIRAR/p5AeAbwBfMNBWPzlrTGH0s6c7IRwdWX0BOMNClaLZ4CjueOdzB3D01JeCJVDbqpGSAYqyKkCmjCtxAWgCwqQSb5fymc58AvS9tOmnyv5NyopqNDJ2umalNUZ/gnAw7SPpUlBmKtgB02K5S02kMvcF6ybsGGsN7UjDHICrH7ov+13U9dJz7MSeD+XKRtTXAMz/BshrKbA9nMYA5VU/SxaT3tSlozY6e+I8CThYlqE0JLkcmFwNl7HrWqSzxy7N2dr9hph7dlZVt/Cpdf+KMkuev0UwtmRTR4zoOTp1pPzSgJo7TshNKo9FbHdWWddNADY4FiwLlz9shmyqngpOBDy2m0Lp1Awmd5auXC5mmx0Jhlf2klypEzYoj0+d1eSED/ijqdjXRzBitw8mR+Xxcti+lsaYxKwB5W90XmbZZmgrFflhtzKNNFXHyQolvrWhCeZ+J01se7b1bTAG9SKoR1nsIJ7qXCX1ERV6AuFWgOJO2qZ61AwB7PINzalaqTEi2j72wRQI8zLrRKsKta1ReGLflmmorxJr/EIzHvV7vo/lWnKKhpyqqACllCaEeHDLP7giZaV2MBVDtnjSPKtBWxbBNPxYFzGxnefRbcnsE4FmIBj+patb4CobaqfYcxVjuFZLuVKcaeNW4JqWDUgIVjkpAfeQ7s1NV2o+dMGIOda7oOXeME3t1fjV+vWH+oIm2DUbND2/AlEfzSZ262A/KDpLS7juMn0Ii5vFKl55ttvBGIyiQmpMWCeYwjIWMn0fnIv9cuj5DbGRrt4Fuomx485+t0INrfB72YxAlxhMdrbe5N6bGWGjmQYp0JbCVNbmmR3RND2bZH3pc95cja3VBIm3QdbWr/2NNro3PYCQLme6pUdUN6ChVxvda0h5jn+mA+hNECMlaK4h758NnZMdt6t3jSUmV/0Fg2YwOBCCUXMAAAAASUVORK5CYII=" alt="check icon" class="icon">
-                                <div>
-                                    <h3>CSS</h3>
-                                    <p>Experienced</p>
-                                </div>
-                            </article>
-                            <article>
-                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAxlJREFUWEetWNFh4jAMfdokTHIwScMk9CahTAKdpNwkvshxYsmWbMMdX4XY1pPe05NTwuiHAITO4s4a77H8nf/ePyMxvfVx76sHGPm5gJoBUuD/EL+CRGW5FCte4Iz2CMIRAR/p5AeAbwBfMNBWPzlrTGH0s6c7IRwdWX0BOMNClaLZ4CjueOdzB3D01JeCJVDbqpGSAYqyKkCmjCtxAWgCwqQSb5fymc58AvS9tOmnyv5NyopqNDJ2umalNUZ/gnAw7SPpUlBmKtgB02K5S02kMvcF6ybsGGsN7UjDHICrH7ov+13U9dJz7MSeD+XKRtTXAMz/BshrKbA9nMYA5VU/SxaT3tSlozY6e+I8CThYlqE0JLkcmFwNl7HrWqSzxy7N2dr9hph7dlZVt/Cpdf+KMkuev0UwtmRTR4zoOTp1pPzSgJo7TshNKo9FbHdWWddNADY4FiwLlz9shmyqngpOBDy2m0Lp1Awmd5auXC5mmx0Jhlf2klypEzYoj0+d1eSED/ijqdjXRzBitw8mR+Xxcti+lsaYxKwB5W90XmbZZmgrFflhtzKNNFXHyQolvrWhCeZ+J01se7b1bTAG9SKoR1nsIJ7qXCX1ERV6AuFWgOJO2qZ61AwB7PINzalaqTEi2j72wRQI8zLrRKsKta1ReGLflmmorxJr/EIzHvV7vo/lWnKKhpyqqACllCaEeHDLP7giZaV2MBVDtnjSPKtBWxbBNPxYFzGxnefRbcnsE4FmIBj+patb4CobaqfYcxVjuFZLuVKcaeNW4JqWDUgIVjkpAfeQ7s1NV2o+dMGIOda7oOXeME3t1fjV+vWH+oIm2DUbND2/AlEfzSZ262A/KDpLS7juMn0Ii5vFKl55ttvBGIyiQmpMWCeYwjIWMn0fnIv9cuj5DbGRrt4Fuomx485+t0INrfB72YxAlxhMdrbe5N6bGWGjmQYp0JbCVNbmmR3RND2bZH3pc95cja3VBIm3QdbWr/2NNro3PYCQLme6pUdUN6ChVxvda0h5jn+mA+hNECMlaK4h758NnZMdt6t3jSUmV/0Fg2YwOBCCUXMAAAAASUVORK5CYII=" alt="check icon" class="icon">
-                                <div>
-                                    <h3>Javascript</h3>
-                                    <p>Intermediate</p>
-                                </div>
-                            </article>
-                            <article>
-                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAxlJREFUWEetWNFh4jAMfdokTHIwScMk9CahTAKdpNwkvshxYsmWbMMdX4XY1pPe05NTwuiHAITO4s4a77H8nf/ePyMxvfVx76sHGPm5gJoBUuD/EL+CRGW5FCte4Iz2CMIRAR/p5AeAbwBfMNBWPzlrTGH0s6c7IRwdWX0BOMNClaLZ4CjueOdzB3D01JeCJVDbqpGSAYqyKkCmjCtxAWgCwqQSb5fymc58AvS9tOmnyv5NyopqNDJ2umalNUZ/gnAw7SPpUlBmKtgB02K5S02kMvcF6ybsGGsN7UjDHICrH7ov+13U9dJz7MSeD+XKRtTXAMz/BshrKbA9nMYA5VU/SxaT3tSlozY6e+I8CThYlqE0JLkcmFwNl7HrWqSzxy7N2dr9hph7dlZVt/Cpdf+KMkuev0UwtmRTR4zoOTp1pPzSgJo7TshNKo9FbHdWWddNADY4FiwLlz9shmyqngpOBDy2m0Lp1Awmd5auXC5mmx0Jhlf2klypEzYoj0+d1eSED/ijqdjXRzBitw8mR+Xxcti+lsaYxKwB5W90XmbZZmgrFflhtzKNNFXHyQolvrWhCeZ+J01se7b1bTAG9SKoR1nsIJ7qXCX1ERV6AuFWgOJO2qZ61AwB7PINzalaqTEi2j72wRQI8zLrRKsKta1ReGLflmmorxJr/EIzHvV7vo/lWnKKhpyqqACllCaEeHDLP7giZaV2MBVDtnjSPKtBWxbBNPxYFzGxnefRbcnsE4FmIBj+patb4CobaqfYcxVjuFZLuVKcaeNW4JqWDUgIVjkpAfeQ7s1NV2o+dMGIOda7oOXeME3t1fjV+vWH+oIm2DUbND2/AlEfzSZ262A/KDpLS7juMn0Ii5vFKl55ttvBGIyiQmpMWCeYwjIWMn0fnIv9cuj5DbGRrt4Fuomx485+t0INrfB72YxAlxhMdrbe5N6bGWGjmQYp0JbCVNbmmR3RND2bZH3pc95cja3VBIm3QdbWr/2NNro3PYCQLme6pUdUN6ChVxvda0h5jn+mA+hNECMlaK4h758NnZMdt6t3jSUmV/0Fg2YwOBCCUXMAAAAASUVORK5CYII=" alt="check icon" class="icon">
-                                <div>
-                                    <h3>React</h3>
-                                    <p>Novice</p>
-                                </div>
-                            </article>
-                        </div>
-                    </div>
-                    <div class="details-container">
-                        <h2 class="experience-subtitle">Backend Development</h2>
-                        <div class="article-container">
-                            <article>
-                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAxlJREFUWEetWNFh4jAMfdokTHIwScMk9CahTAKdpNwkvshxYsmWbMMdX4XY1pPe05NTwuiHAITO4s4a77H8nf/ePyMxvfVx76sHGPm5gJoBUuD/EL+CRGW5FCte4Iz2CMIRAR/p5AeAbwBfMNBWPzlrTGH0s6c7IRwdWX0BOMNClaLZ4CjueOdzB3D01JeCJVDbqpGSAYqyKkCmjCtxAWgCwqQSb5fymc58AvS9tOmnyv5NyopqNDJ2umalNUZ/gnAw7SPpUlBmKtgB02K5S02kMvcF6ybsGGsN7UjDHICrH7ov+13U9dJz7MSeD+XKRtTXAMz/BshrKbA9nMYA5VU/SxaT3tSlozY6e+I8CThYlqE0JLkcmFwNl7HrWqSzxy7N2dr9hph7dlZVt/Cpdf+KMkuev0UwtmRTR4zoOTp1pPzSgJo7TshNKo9FbHdWWddNADY4FiwLlz9shmyqngpOBDy2m0Lp1Awmd5auXC5mmx0Jhlf2klypEzYoj0+d1eSED/ijqdjXRzBitw8mR+Xxcti+lsaYxKwB5W90XmbZZmgrFflhtzKNNFXHyQolvrWhCeZ+J01se7b1bTAG9SKoR1nsIJ7qXCX1ERV6AuFWgOJO2qZ61AwB7PINzalaqTEi2j72wRQI8zLrRKsKta1ReGLflmmorxJr/EIzHvV7vo/lWnKKhpyqqACllCaEeHDLP7giZaV2MBVDtnjSPKtBWxbBNPxYFzGxnefRbcnsE4FmIBj+patb4CobaqfYcxVjuFZLuVKcaeNW4JqWDUgIVjkpAfeQ7s1NV2o+dMGIOda7oOXeME3t1fjV+vWH+oIm2DUbND2/AlEfzSZ262A/KDpLS7juMn0Ii5vFKl55ttvBGIyiQmpMWCeYwjIWMn0fnIv9cuj5DbGRrt4Fuomx485+t0INrfB72YxAlxhMdrbe5N6bGWGjmQYp0JbCVNbmmR3RND2bZH3pc95cja3VBIm3QdbWr/2NNro3PYCQLme6pUdUN6ChVxvda0h5jn+mA+hNECMlaK4h758NnZMdt6t3jSUmV/0Fg2YwOBCCUXMAAAAASUVORK5CYII=" alt="check icon" class="icon">
-                                <div>
-                                    <h3>C#</h3>
-                                    <p>Experienced</p>
-                                </div>
-                            </article>
-                            <article>
-                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAxlJREFUWEetWNFh4jAMfdokTHIwScMk9CahTAKdpNwkvshxYsmWbMMdX4XY1pPe05NTwuiHAITO4s4a77H8nf/ePyMxvfVx76sHGPm5gJoBUuD/EL+CRGW5FCte4Iz2CMIRAR/p5AeAbwBfMNBWPzlrTGH0s6c7IRwdWX0BOMNClaLZ4CjueOdzB3D01JeCJVDbqpGSAYqyKkCmjCtxAWgCwqQSb5fymc58AvS9tOmnyv5NyopqNDJ2umalNUZ/gnAw7SPpUlBmKtgB02K5S02kMvcF6ybsGGsN7UjDHICrH7ov+13U9dJz7MSeD+XKRtTXAMz/BshrKbA9nMYA5VU/SxaT3tSlozY6e+I8CThYlqE0JLkcmFwNl7HrWqSzxy7N2dr9hph7dlZVt/Cpdf+KMkuev0UwtmRTR4zoOTp1pPzSgJo7TshNKo9FbHdWWddNADY4FiwLlz9shmyqngpOBDy2m0Lp1Awmd5auXC5mmx0Jhlf2klypEzYoj0+d1eSED/ijqdjXRzBitw8mR+Xxcti+lsaYxKwB5W90XmbZZmgrFflhtzKNNFXHyQolvrWhCeZ+J01se7b1bTAG9SKoR1nsIJ7qXCX1ERV6AuFWgOJO2qZ61AwB7PINzalaqTEi2j72wRQI8zLrRKsKta1ReGLflmmorxJr/EIzHvV7vo/lWnKKhpyqqACllCaEeHDLP7giZaV2MBVDtnjSPKtBWxbBNPxYFzGxnefRbcnsE4FmIBj+patb4CobaqfYcxVjuFZLuVKcaeNW4JqWDUgIVjkpAfeQ7s1NV2o+dMGIOda7oOXeME3t1fjV+vWH+oIm2DUbND2/AlEfzSZ262A/KDpLS7juMn0Ii5vFKl55ttvBGIyiQmpMWCeYwjIWMn0fnIv9cuj5DbGRrt4Fuomx485+t0INrfB72YxAlxhMdrbe5N6bGWGjmQYp0JbCVNbmmR3RND2bZH3pc95cja3VBIm3QdbWr/2NNro3PYCQLme6pUdUN6ChVxvda0h5jn+mA+hNECMlaK4h758NnZMdt6t3jSUmV/0Fg2YwOBCCUXMAAAAASUVORK5CYII=" alt="check icon" class="icon">
-                                <div>
-                                    <h3>SQL</h3>
-                                    <p>Intermediate</p>
-                                </div>
-                            </article>
-                            <article>
-                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAxlJREFUWEetWNFh4jAMfdokTHIwScMk9CahTAKdpNwkvshxYsmWbMMdX4XY1pPe05NTwuiHAITO4s4a77H8nf/ePyMxvfVx76sHGPm5gJoBUuD/EL+CRGW5FCte4Iz2CMIRAR/p5AeAbwBfMNBWPzlrTGH0s6c7IRwdWX0BOMNClaLZ4CjueOdzB3D01JeCJVDbqpGSAYqyKkCmjCtxAWgCwqQSb5fymc58AvS9tOmnyv5NyopqNDJ2umalNUZ/gnAw7SPpUlBmKtgB02K5S02kMvcF6ybsGGsN7UjDHICrH7ov+13U9dJz7MSeD+XKRtTXAMz/BshrKbA9nMYA5VU/SxaT3tSlozY6e+I8CThYlqE0JLkcmFwNl7HrWqSzxy7N2dr9hph7dlZVt/Cpdf+KMkuev0UwtmRTR4zoOTp1pPzSgJo7TshNKo9FbHdWWddNADY4FiwLlz9shmyqngpOBDy2m0Lp1Awmd5auXC5mmx0Jhlf2klypEzYoj0+d1eSED/ijqdjXRzBitw8mR+Xxcti+lsaYxKwB5W90XmbZZmgrFflhtzKNNFXHyQolvrWhCeZ+J01se7b1bTAG9SKoR1nsIJ7qXCX1ERV6AuFWgOJO2qZ61AwB7PINzalaqTEi2j72wRQI8zLrRKsKta1ReGLflmmorxJr/EIzHvV7vo/lWnKKhpyqqACllCaEeHDLP7giZaV2MBVDtnjSPKtBWxbBNPxYFzGxnefRbcnsE4FmIBj+patb4CobaqfYcxVjuFZLuVKcaeNW4JqWDUgIVjkpAfeQ7s1NV2o+dMGIOda7oOXeME3t1fjV+vWH+oIm2DUbND2/AlEfzSZ262A/KDpLS7juMn0Ii5vFKl55ttvBGIyiQmpMWCeYwjIWMn0fnIv9cuj5DbGRrt4Fuomx485+t0INrfB72YxAlxhMdrbe5N6bGWGjmQYp0JbCVNbmmR3RND2bZH3pc95cja3VBIm3QdbWr/2NNro3PYCQLme6pUdUN6ChVxvda0h5jn+mA+hNECMlaK4h758NnZMdt6t3jSUmV/0Fg2YwOBCCUXMAAAAASUVORK5CYII=" alt="check icon" class="icon">
-                                <div>
-                                    <h3>Git</h3>
-                                    <p>Intermediate</p>
-                                </div>
-                            </article>
-                        </div>
-                    </div>
-                </div>
+            <div class="text-container">
+              <p>
+                I have always had a strong interest in computers and software
+                development, which has led me to a career where i can combine
+                passion with profession. I am a driven and proactive individual
+                who constalty strives to grow and learn new things, both
+                profesionally and personally.
+              </p>
             </div>
-            <a href="#projects">
-                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAcBJREFUSEuNVtGhgzAIPDbRTdpROkm7ib5Juoqb8AqSBBLS2h81Jhx3HFgiAIxvP9uhl7j761l3rEZvBwgENmAPAORB/Wq8lyc7FQO19YTdsHXO5QSYxfitX6WUKFhzTHnPSPtcruJXiVT3H5Hz175mMQVq1GxTTOsJ4A/AcR4bXLQwcANoz71ImAIQ8PyweYE1+L2BlAxpIfDGhBuYHgTeC/ue5cxFC4A3ALn2ILK2EXBjfUdrLm9hYPQT7y/gAUR2b1BpFHj91aaRge12NE8mhAVMB8ASVHSX+3nw0itD90YBn2Atsvzen2KK7tLhJXMBFyb7YN8AkHtPHPQSGQi4n/OK3uoWwgrW2hSpHgoyNEbnomY1taxYsBWZcLfhJNn74F0d4hwLo8L3hGUqukvW1UmWpGZOwMEnm9AmfmyEPvDNMhRZs6aDwIc1l9yv30c9rNF8AgbfLKsvfU/Is8oyH9JO7GHTbCwaiO1Xe+bDLs7ysQZjHzgHqk1FIg3fsYyIDid5MZuO3aSsX72kyGUpVLx+nxN1rw7/buIFia58TJJemk1q/ZPgbDqn2YCv0WiTVaTu7ZDEmM0rvz7pIfwDFrLpIUMRolAAAAAASUVORK5CYII=" alt="arrow picture" class="icon-arrow" >
-            </a>
-        </section>
-        <section id="projects">
-            <p class="section_text_p1">Browse My Recent</p>
-            <h1 class="title">Projects</h1>
-            <div class="experience-details-container">
-                <div class="about-containers">
-                    <div class="details-container">
-                        <div class="article-container">
-                            <img src="/Portfolio/assets/projectone-GKORe-Bp.jpg" alt="my github" class="project-image">
-                        </div>
-                        <h2 class="experience-subtitle project-title">Project one</h2>
-                        <a href="" class="primary-button">Github</a>
-                    </div>
-                </div> 
+          </div>
+          <a href="#experience">
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAcBJREFUSEuNVtGhgzAIPDbRTdpROkm7ib5Juoqb8AqSBBLS2h81Jhx3HFgiAIxvP9uhl7j761l3rEZvBwgENmAPAORB/Wq8lyc7FQO19YTdsHXO5QSYxfitX6WUKFhzTHnPSPtcruJXiVT3H5Hz175mMQVq1GxTTOsJ4A/AcR4bXLQwcANoz71ImAIQ8PyweYE1+L2BlAxpIfDGhBuYHgTeC/ue5cxFC4A3ALn2ILK2EXBjfUdrLm9hYPQT7y/gAUR2b1BpFHj91aaRge12NE8mhAVMB8ASVHSX+3nw0itD90YBn2Atsvzen2KK7tLhJXMBFyb7YN8AkHtPHPQSGQi4n/OK3uoWwgrW2hSpHgoyNEbnomY1taxYsBWZcLfhJNn74F0d4hwLo8L3hGUqukvW1UmWpGZOwMEnm9AmfmyEPvDNMhRZs6aDwIc1l9yv30c9rNF8AgbfLKsvfU/Is8oyH9JO7GHTbCwaiO1Xe+bDLs7ysQZjHzgHqk1FIg3fsYyIDid5MZuO3aSsX72kyGUpVLx+nxN1rw7/buIFia58TJJemk1q/ZPgbDqn2YCv0WiTVaTu7ZDEmM0rvz7pIfwDFrLpIUMRolAAAAAASUVORK5CYII="
+              alt="arrow picture"
+              class="icon-arrow"
+            />
+          </a>
+        </div>
+      </section>
+      <section id="experience">
+        <p class="section_text_p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <h2 class="experience-subtitle">Frontend Development</h2>
+              <div class="article-container">
+                <article>
+                  <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAxlJREFUWEetWNFh4jAMfdokTHIwScMk9CahTAKdpNwkvshxYsmWbMMdX4XY1pPe05NTwuiHAITO4s4a77H8nf/ePyMxvfVx76sHGPm5gJoBUuD/EL+CRGW5FCte4Iz2CMIRAR/p5AeAbwBfMNBWPzlrTGH0s6c7IRwdWX0BOMNClaLZ4CjueOdzB3D01JeCJVDbqpGSAYqyKkCmjCtxAWgCwqQSb5fymc58AvS9tOmnyv5NyopqNDJ2umalNUZ/gnAw7SPpUlBmKtgB02K5S02kMvcF6ybsGGsN7UjDHICrH7ov+13U9dJz7MSeD+XKRtTXAMz/BshrKbA9nMYA5VU/SxaT3tSlozY6e+I8CThYlqE0JLkcmFwNl7HrWqSzxy7N2dr9hph7dlZVt/Cpdf+KMkuev0UwtmRTR4zoOTp1pPzSgJo7TshNKo9FbHdWWddNADY4FiwLlz9shmyqngpOBDy2m0Lp1Awmd5auXC5mmx0Jhlf2klypEzYoj0+d1eSED/ijqdjXRzBitw8mR+Xxcti+lsaYxKwB5W90XmbZZmgrFflhtzKNNFXHyQolvrWhCeZ+J01se7b1bTAG9SKoR1nsIJ7qXCX1ERV6AuFWgOJO2qZ61AwB7PINzalaqTEi2j72wRQI8zLrRKsKta1ReGLflmmorxJr/EIzHvV7vo/lWnKKhpyqqACllCaEeHDLP7giZaV2MBVDtnjSPKtBWxbBNPxYFzGxnefRbcnsE4FmIBj+patb4CobaqfYcxVjuFZLuVKcaeNW4JqWDUgIVjkpAfeQ7s1NV2o+dMGIOda7oOXeME3t1fjV+vWH+oIm2DUbND2/AlEfzSZ262A/KDpLS7juMn0Ii5vFKl55ttvBGIyiQmpMWCeYwjIWMn0fnIv9cuj5DbGRrt4Fuomx485+t0INrfB72YxAlxhMdrbe5N6bGWGjmQYp0JbCVNbmmR3RND2bZH3pc95cja3VBIm3QdbWr/2NNro3PYCQLme6pUdUN6ChVxvda0h5jn+mA+hNECMlaK4h758NnZMdt6t3jSUmV/0Fg2YwOBCCUXMAAAAASUVORK5CYII="
+                    alt="check icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>HTML</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAxlJREFUWEetWNFh4jAMfdokTHIwScMk9CahTAKdpNwkvshxYsmWbMMdX4XY1pPe05NTwuiHAITO4s4a77H8nf/ePyMxvfVx76sHGPm5gJoBUuD/EL+CRGW5FCte4Iz2CMIRAR/p5AeAbwBfMNBWPzlrTGH0s6c7IRwdWX0BOMNClaLZ4CjueOdzB3D01JeCJVDbqpGSAYqyKkCmjCtxAWgCwqQSb5fymc58AvS9tOmnyv5NyopqNDJ2umalNUZ/gnAw7SPpUlBmKtgB02K5S02kMvcF6ybsGGsN7UjDHICrH7ov+13U9dJz7MSeD+XKRtTXAMz/BshrKbA9nMYA5VU/SxaT3tSlozY6e+I8CThYlqE0JLkcmFwNl7HrWqSzxy7N2dr9hph7dlZVt/Cpdf+KMkuev0UwtmRTR4zoOTp1pPzSgJo7TshNKo9FbHdWWddNADY4FiwLlz9shmyqngpOBDy2m0Lp1Awmd5auXC5mmx0Jhlf2klypEzYoj0+d1eSED/ijqdjXRzBitw8mR+Xxcti+lsaYxKwB5W90XmbZZmgrFflhtzKNNFXHyQolvrWhCeZ+J01se7b1bTAG9SKoR1nsIJ7qXCX1ERV6AuFWgOJO2qZ61AwB7PINzalaqTEi2j72wRQI8zLrRKsKta1ReGLflmmorxJr/EIzHvV7vo/lWnKKhpyqqACllCaEeHDLP7giZaV2MBVDtnjSPKtBWxbBNPxYFzGxnefRbcnsE4FmIBj+patb4CobaqfYcxVjuFZLuVKcaeNW4JqWDUgIVjkpAfeQ7s1NV2o+dMGIOda7oOXeME3t1fjV+vWH+oIm2DUbND2/AlEfzSZ262A/KDpLS7juMn0Ii5vFKl55ttvBGIyiQmpMWCeYwjIWMn0fnIv9cuj5DbGRrt4Fuomx485+t0INrfB72YxAlxhMdrbe5N6bGWGjmQYp0JbCVNbmmR3RND2bZH3pc95cja3VBIm3QdbWr/2NNro3PYCQLme6pUdUN6ChVxvda0h5jn+mA+hNECMlaK4h758NnZMdt6t3jSUmV/0Fg2YwOBCCUXMAAAAASUVORK5CYII="
+                    alt="check icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>CSS</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAxlJREFUWEetWNFh4jAMfdokTHIwScMk9CahTAKdpNwkvshxYsmWbMMdX4XY1pPe05NTwuiHAITO4s4a77H8nf/ePyMxvfVx76sHGPm5gJoBUuD/EL+CRGW5FCte4Iz2CMIRAR/p5AeAbwBfMNBWPzlrTGH0s6c7IRwdWX0BOMNClaLZ4CjueOdzB3D01JeCJVDbqpGSAYqyKkCmjCtxAWgCwqQSb5fymc58AvS9tOmnyv5NyopqNDJ2umalNUZ/gnAw7SPpUlBmKtgB02K5S02kMvcF6ybsGGsN7UjDHICrH7ov+13U9dJz7MSeD+XKRtTXAMz/BshrKbA9nMYA5VU/SxaT3tSlozY6e+I8CThYlqE0JLkcmFwNl7HrWqSzxy7N2dr9hph7dlZVt/Cpdf+KMkuev0UwtmRTR4zoOTp1pPzSgJo7TshNKo9FbHdWWddNADY4FiwLlz9shmyqngpOBDy2m0Lp1Awmd5auXC5mmx0Jhlf2klypEzYoj0+d1eSED/ijqdjXRzBitw8mR+Xxcti+lsaYxKwB5W90XmbZZmgrFflhtzKNNFXHyQolvrWhCeZ+J01se7b1bTAG9SKoR1nsIJ7qXCX1ERV6AuFWgOJO2qZ61AwB7PINzalaqTEi2j72wRQI8zLrRKsKta1ReGLflmmorxJr/EIzHvV7vo/lWnKKhpyqqACllCaEeHDLP7giZaV2MBVDtnjSPKtBWxbBNPxYFzGxnefRbcnsE4FmIBj+patb4CobaqfYcxVjuFZLuVKcaeNW4JqWDUgIVjkpAfeQ7s1NV2o+dMGIOda7oOXeME3t1fjV+vWH+oIm2DUbND2/AlEfzSZ262A/KDpLS7juMn0Ii5vFKl55ttvBGIyiQmpMWCeYwjIWMn0fnIv9cuj5DbGRrt4Fuomx485+t0INrfB72YxAlxhMdrbe5N6bGWGjmQYp0JbCVNbmmR3RND2bZH3pc95cja3VBIm3QdbWr/2NNro3PYCQLme6pUdUN6ChVxvda0h5jn+mA+hNECMlaK4h758NnZMdt6t3jSUmV/0Fg2YwOBCCUXMAAAAASUVORK5CYII="
+                    alt="check icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Javascript</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAxlJREFUWEetWNFh4jAMfdokTHIwScMk9CahTAKdpNwkvshxYsmWbMMdX4XY1pPe05NTwuiHAITO4s4a77H8nf/ePyMxvfVx76sHGPm5gJoBUuD/EL+CRGW5FCte4Iz2CMIRAR/p5AeAbwBfMNBWPzlrTGH0s6c7IRwdWX0BOMNClaLZ4CjueOdzB3D01JeCJVDbqpGSAYqyKkCmjCtxAWgCwqQSb5fymc58AvS9tOmnyv5NyopqNDJ2umalNUZ/gnAw7SPpUlBmKtgB02K5S02kMvcF6ybsGGsN7UjDHICrH7ov+13U9dJz7MSeD+XKRtTXAMz/BshrKbA9nMYA5VU/SxaT3tSlozY6e+I8CThYlqE0JLkcmFwNl7HrWqSzxy7N2dr9hph7dlZVt/Cpdf+KMkuev0UwtmRTR4zoOTp1pPzSgJo7TshNKo9FbHdWWddNADY4FiwLlz9shmyqngpOBDy2m0Lp1Awmd5auXC5mmx0Jhlf2klypEzYoj0+d1eSED/ijqdjXRzBitw8mR+Xxcti+lsaYxKwB5W90XmbZZmgrFflhtzKNNFXHyQolvrWhCeZ+J01se7b1bTAG9SKoR1nsIJ7qXCX1ERV6AuFWgOJO2qZ61AwB7PINzalaqTEi2j72wRQI8zLrRKsKta1ReGLflmmorxJr/EIzHvV7vo/lWnKKhpyqqACllCaEeHDLP7giZaV2MBVDtnjSPKtBWxbBNPxYFzGxnefRbcnsE4FmIBj+patb4CobaqfYcxVjuFZLuVKcaeNW4JqWDUgIVjkpAfeQ7s1NV2o+dMGIOda7oOXeME3t1fjV+vWH+oIm2DUbND2/AlEfzSZ262A/KDpLS7juMn0Ii5vFKl55ttvBGIyiQmpMWCeYwjIWMn0fnIv9cuj5DbGRrt4Fuomx485+t0INrfB72YxAlxhMdrbe5N6bGWGjmQYp0JbCVNbmmR3RND2bZH3pc95cja3VBIm3QdbWr/2NNro3PYCQLme6pUdUN6ChVxvda0h5jn+mA+hNECMlaK4h758NnZMdt6t3jSUmV/0Fg2YwOBCCUXMAAAAASUVORK5CYII="
+                    alt="check icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>React</h3>
+                    <p>Novice</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div class="details-container">
+              <h2 class="experience-subtitle">Backend Development</h2>
+              <div class="article-container">
+                <article>
+                  <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAxlJREFUWEetWNFh4jAMfdokTHIwScMk9CahTAKdpNwkvshxYsmWbMMdX4XY1pPe05NTwuiHAITO4s4a77H8nf/ePyMxvfVx76sHGPm5gJoBUuD/EL+CRGW5FCte4Iz2CMIRAR/p5AeAbwBfMNBWPzlrTGH0s6c7IRwdWX0BOMNClaLZ4CjueOdzB3D01JeCJVDbqpGSAYqyKkCmjCtxAWgCwqQSb5fymc58AvS9tOmnyv5NyopqNDJ2umalNUZ/gnAw7SPpUlBmKtgB02K5S02kMvcF6ybsGGsN7UjDHICrH7ov+13U9dJz7MSeD+XKRtTXAMz/BshrKbA9nMYA5VU/SxaT3tSlozY6e+I8CThYlqE0JLkcmFwNl7HrWqSzxy7N2dr9hph7dlZVt/Cpdf+KMkuev0UwtmRTR4zoOTp1pPzSgJo7TshNKo9FbHdWWddNADY4FiwLlz9shmyqngpOBDy2m0Lp1Awmd5auXC5mmx0Jhlf2klypEzYoj0+d1eSED/ijqdjXRzBitw8mR+Xxcti+lsaYxKwB5W90XmbZZmgrFflhtzKNNFXHyQolvrWhCeZ+J01se7b1bTAG9SKoR1nsIJ7qXCX1ERV6AuFWgOJO2qZ61AwB7PINzalaqTEi2j72wRQI8zLrRKsKta1ReGLflmmorxJr/EIzHvV7vo/lWnKKhpyqqACllCaEeHDLP7giZaV2MBVDtnjSPKtBWxbBNPxYFzGxnefRbcnsE4FmIBj+patb4CobaqfYcxVjuFZLuVKcaeNW4JqWDUgIVjkpAfeQ7s1NV2o+dMGIOda7oOXeME3t1fjV+vWH+oIm2DUbND2/AlEfzSZ262A/KDpLS7juMn0Ii5vFKl55ttvBGIyiQmpMWCeYwjIWMn0fnIv9cuj5DbGRrt4Fuomx485+t0INrfB72YxAlxhMdrbe5N6bGWGjmQYp0JbCVNbmmR3RND2bZH3pc95cja3VBIm3QdbWr/2NNro3PYCQLme6pUdUN6ChVxvda0h5jn+mA+hNECMlaK4h758NnZMdt6t3jSUmV/0Fg2YwOBCCUXMAAAAASUVORK5CYII="
+                    alt="check icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>C#</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAxlJREFUWEetWNFh4jAMfdokTHIwScMk9CahTAKdpNwkvshxYsmWbMMdX4XY1pPe05NTwuiHAITO4s4a77H8nf/ePyMxvfVx76sHGPm5gJoBUuD/EL+CRGW5FCte4Iz2CMIRAR/p5AeAbwBfMNBWPzlrTGH0s6c7IRwdWX0BOMNClaLZ4CjueOdzB3D01JeCJVDbqpGSAYqyKkCmjCtxAWgCwqQSb5fymc58AvS9tOmnyv5NyopqNDJ2umalNUZ/gnAw7SPpUlBmKtgB02K5S02kMvcF6ybsGGsN7UjDHICrH7ov+13U9dJz7MSeD+XKRtTXAMz/BshrKbA9nMYA5VU/SxaT3tSlozY6e+I8CThYlqE0JLkcmFwNl7HrWqSzxy7N2dr9hph7dlZVt/Cpdf+KMkuev0UwtmRTR4zoOTp1pPzSgJo7TshNKo9FbHdWWddNADY4FiwLlz9shmyqngpOBDy2m0Lp1Awmd5auXC5mmx0Jhlf2klypEzYoj0+d1eSED/ijqdjXRzBitw8mR+Xxcti+lsaYxKwB5W90XmbZZmgrFflhtzKNNFXHyQolvrWhCeZ+J01se7b1bTAG9SKoR1nsIJ7qXCX1ERV6AuFWgOJO2qZ61AwB7PINzalaqTEi2j72wRQI8zLrRKsKta1ReGLflmmorxJr/EIzHvV7vo/lWnKKhpyqqACllCaEeHDLP7giZaV2MBVDtnjSPKtBWxbBNPxYFzGxnefRbcnsE4FmIBj+patb4CobaqfYcxVjuFZLuVKcaeNW4JqWDUgIVjkpAfeQ7s1NV2o+dMGIOda7oOXeME3t1fjV+vWH+oIm2DUbND2/AlEfzSZ262A/KDpLS7juMn0Ii5vFKl55ttvBGIyiQmpMWCeYwjIWMn0fnIv9cuj5DbGRrt4Fuomx485+t0INrfB72YxAlxhMdrbe5N6bGWGjmQYp0JbCVNbmmR3RND2bZH3pc95cja3VBIm3QdbWr/2NNro3PYCQLme6pUdUN6ChVxvda0h5jn+mA+hNECMlaK4h758NnZMdt6t3jSUmV/0Fg2YwOBCCUXMAAAAASUVORK5CYII="
+                    alt="check icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>SQL</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAxlJREFUWEetWNFh4jAMfdokTHIwScMk9CahTAKdpNwkvshxYsmWbMMdX4XY1pPe05NTwuiHAITO4s4a77H8nf/ePyMxvfVx76sHGPm5gJoBUuD/EL+CRGW5FCte4Iz2CMIRAR/p5AeAbwBfMNBWPzlrTGH0s6c7IRwdWX0BOMNClaLZ4CjueOdzB3D01JeCJVDbqpGSAYqyKkCmjCtxAWgCwqQSb5fymc58AvS9tOmnyv5NyopqNDJ2umalNUZ/gnAw7SPpUlBmKtgB02K5S02kMvcF6ybsGGsN7UjDHICrH7ov+13U9dJz7MSeD+XKRtTXAMz/BshrKbA9nMYA5VU/SxaT3tSlozY6e+I8CThYlqE0JLkcmFwNl7HrWqSzxy7N2dr9hph7dlZVt/Cpdf+KMkuev0UwtmRTR4zoOTp1pPzSgJo7TshNKo9FbHdWWddNADY4FiwLlz9shmyqngpOBDy2m0Lp1Awmd5auXC5mmx0Jhlf2klypEzYoj0+d1eSED/ijqdjXRzBitw8mR+Xxcti+lsaYxKwB5W90XmbZZmgrFflhtzKNNFXHyQolvrWhCeZ+J01se7b1bTAG9SKoR1nsIJ7qXCX1ERV6AuFWgOJO2qZ61AwB7PINzalaqTEi2j72wRQI8zLrRKsKta1ReGLflmmorxJr/EIzHvV7vo/lWnKKhpyqqACllCaEeHDLP7giZaV2MBVDtnjSPKtBWxbBNPxYFzGxnefRbcnsE4FmIBj+patb4CobaqfYcxVjuFZLuVKcaeNW4JqWDUgIVjkpAfeQ7s1NV2o+dMGIOda7oOXeME3t1fjV+vWH+oIm2DUbND2/AlEfzSZ262A/KDpLS7juMn0Ii5vFKl55ttvBGIyiQmpMWCeYwjIWMn0fnIv9cuj5DbGRrt4Fuomx485+t0INrfB72YxAlxhMdrbe5N6bGWGjmQYp0JbCVNbmmR3RND2bZH3pc95cja3VBIm3QdbWr/2NNro3PYCQLme6pUdUN6ChVxvda0h5jn+mA+hNECMlaK4h758NnZMdt6t3jSUmV/0Fg2YwOBCCUXMAAAAASUVORK5CYII="
+                    alt="check icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Git</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="#projects">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAcBJREFUSEuNVtGhgzAIPDbRTdpROkm7ib5Juoqb8AqSBBLS2h81Jhx3HFgiAIxvP9uhl7j761l3rEZvBwgENmAPAORB/Wq8lyc7FQO19YTdsHXO5QSYxfitX6WUKFhzTHnPSPtcruJXiVT3H5Hz175mMQVq1GxTTOsJ4A/AcR4bXLQwcANoz71ImAIQ8PyweYE1+L2BlAxpIfDGhBuYHgTeC/ue5cxFC4A3ALn2ILK2EXBjfUdrLm9hYPQT7y/gAUR2b1BpFHj91aaRge12NE8mhAVMB8ASVHSX+3nw0itD90YBn2Atsvzen2KK7tLhJXMBFyb7YN8AkHtPHPQSGQi4n/OK3uoWwgrW2hSpHgoyNEbnomY1taxYsBWZcLfhJNn74F0d4hwLo8L3hGUqukvW1UmWpGZOwMEnm9AmfmyEPvDNMhRZs6aDwIc1l9yv30c9rNF8AgbfLKsvfU/Is8oyH9JO7GHTbCwaiO1Xe+bDLs7ysQZjHzgHqk1FIg3fsYyIDid5MZuO3aSsX72kyGUpVLx+nxN1rw7/buIFia58TJJemk1q/ZPgbDqn2YCv0WiTVaTu7ZDEmM0rvz7pIfwDFrLpIUMRolAAAAAASUVORK5CYII=" alt="arrow picture" class="icon-arrow" />
+        </a>
+      </section>
+      <section id="projects">
+        <p class="section_text_p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <div class="article-container">
+                <img
+                  src="/Portfolio/assets/projectone-GKORe-Bp.jpg"
+                  alt="my github"
+                  class="project-image"
+                />
+              </div>
+              <h2 class="experience-subtitle project-title">Project one</h2>
+              <a href="" class="primary-button">Github</a>
+            </div>
+          </div>
 
-                <div class="about-containers">
-                    <div class="details-container">
-                        <div class="article-container">
-                            <img src="/Portfolio/assets/projecttwo-C1DovkMX.jpg" alt="my github" class="project-image">    
-                        </div>
-                        <h2 class="experience-subtitle project-title">Project two</h2>
-                        <a href="" class="primary-button">Github</a>
-                    </div> 
-                </div>    
+          <div class="about-containers">
+            <div class="details-container">
+              <div class="article-container">
+                <img
+                  src="/Portfolio/assets/projecttwo-C1DovkMX.jpg"
+                  alt="my github"
+                  class="project-image"
+                />
+              </div>
+              <h2 class="experience-subtitle project-title">Project two</h2>
+              <a href="" class="primary-button">Github</a>
+            </div>
+          </div>
 
-                <div class="about-containers">
-                    <div class="details-container">
-                        <div class="article-container">
-                            <img src="/Portfolio/assets/projectthree-ibeZduc_.jpg" alt="my github" class="project-image">
-                        </div>
-                        <h2 class="experience-subtitle project-title">Project three</h2>
-                        <a href="" class="primary-button">Github</a>
-                    </div> 
-                </div>
-
+          <div class="about-containers">
+            <div class="details-container">
+              <div class="article-container">
+                <img
+                  src="/Portfolio/assets/projectthree-ibeZduc_.jpg"
+                  alt="my github"
+                  class="project-image"
+                />
+              </div>
+              <h2 class="experience-subtitle project-title">Project three</h2>
+              <a href="" class="primary-button">Github</a>
             </div>
-            <a href="#contact">
-                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAcBJREFUSEuNVtGhgzAIPDbRTdpROkm7ib5Juoqb8AqSBBLS2h81Jhx3HFgiAIxvP9uhl7j761l3rEZvBwgENmAPAORB/Wq8lyc7FQO19YTdsHXO5QSYxfitX6WUKFhzTHnPSPtcruJXiVT3H5Hz175mMQVq1GxTTOsJ4A/AcR4bXLQwcANoz71ImAIQ8PyweYE1+L2BlAxpIfDGhBuYHgTeC/ue5cxFC4A3ALn2ILK2EXBjfUdrLm9hYPQT7y/gAUR2b1BpFHj91aaRge12NE8mhAVMB8ASVHSX+3nw0itD90YBn2Atsvzen2KK7tLhJXMBFyb7YN8AkHtPHPQSGQi4n/OK3uoWwgrW2hSpHgoyNEbnomY1taxYsBWZcLfhJNn74F0d4hwLo8L3hGUqukvW1UmWpGZOwMEnm9AmfmyEPvDNMhRZs6aDwIc1l9yv30c9rNF8AgbfLKsvfU/Is8oyH9JO7GHTbCwaiO1Xe+bDLs7ysQZjHzgHqk1FIg3fsYyIDid5MZuO3aSsX72kyGUpVLx+nxN1rw7/buIFia58TJJemk1q/ZPgbDqn2YCv0WiTVaTu7ZDEmM0rvz7pIfwDFrLpIUMRolAAAAAASUVORK5CYII=" alt="arrow picture" class="icon-arrow" >
-            </a>
-        </section>
-        <section id="contact">
-            <p class="section_text_p1">Get in touch</p>
-            <h1 class="title">Contact Me</h1>
-            <div class="form-container">
-                <p class="form-container_p">Fill out the form below</p>
-                <form action="https://formshow.systementor.se" method="POST" target="_blank" class="form">
-                    <div>
-                        <input type="text" id="name" name="name" placeholder="Name" required>
-                        <input type="email" id="email" name="email" placeholder="Email Address" required>
-                        <input type="text" id="companyname" name="Company Name" placeholder="Company Name">
-                    </div>
-                    <div>
-                        <textarea rows="8" maxlength="400" id="message" name="Message" placeholder="Message" required></textarea>
-                        <input type="submit" value="Submit" id="submit">  
-                    </div>             
-                </form>
+          </div>
+        </div>
+        <a href="#contact">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAcBJREFUSEuNVtGhgzAIPDbRTdpROkm7ib5Juoqb8AqSBBLS2h81Jhx3HFgiAIxvP9uhl7j761l3rEZvBwgENmAPAORB/Wq8lyc7FQO19YTdsHXO5QSYxfitX6WUKFhzTHnPSPtcruJXiVT3H5Hz175mMQVq1GxTTOsJ4A/AcR4bXLQwcANoz71ImAIQ8PyweYE1+L2BlAxpIfDGhBuYHgTeC/ue5cxFC4A3ALn2ILK2EXBjfUdrLm9hYPQT7y/gAUR2b1BpFHj91aaRge12NE8mhAVMB8ASVHSX+3nw0itD90YBn2Atsvzen2KK7tLhJXMBFyb7YN8AkHtPHPQSGQi4n/OK3uoWwgrW2hSpHgoyNEbnomY1taxYsBWZcLfhJNn74F0d4hwLo8L3hGUqukvW1UmWpGZOwMEnm9AmfmyEPvDNMhRZs6aDwIc1l9yv30c9rNF8AgbfLKsvfU/Is8oyH9JO7GHTbCwaiO1Xe+bDLs7ysQZjHzgHqk1FIg3fsYyIDid5MZuO3aSsX72kyGUpVLx+nxN1rw7/buIFia58TJJemk1q/ZPgbDqn2YCv0WiTVaTu7ZDEmM0rvz7pIfwDFrLpIUMRolAAAAAASUVORK5CYII=" alt="arrow picture" class="icon-arrow" />
+        </a>
+      </section>
+      <section id="contact">
+        <p class="section_text_p1">Get in touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="form-container">
+          <p class="form-container_p">Fill out the form below</p>
+          <form
+            action="https://formshow.systementor.se"
+            method="POST"
+            target="_blank"
+            class="form"
+          >
+            <div>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Name"
+                required
+              />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Email Address"
+                required
+              />
+              <input
+                type="text"
+                id="companyname"
+                name="Company Name"
+                placeholder="Company Name"
+              />
             </div>
-            <div class="contact-info-upper-container">
-                <p class="contact-info-upper-container_p">Alternatively make contact here</p>
-                <div class="contact-info-lower-container">
-                    <div class="contact-info-container">
-                        <a href="mailto:adam.reinwalds@yh.nackademin.se">
-                            <img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3e%3cpath%20d='M20%204H6c-1.103%200-2%20.897-2%202v5h2V8l6.4%204.8a1.001%201.001%200%200%200%201.2%200L20%208v9h-8v2h8c1.103%200%202-.897%202-2V6c0-1.103-.897-2-2-2zm-7%206.75L6.666%206h12.668L13%2010.75z'/%3e%3cpath%20d='M2%2012h7v2H2zm2%203h6v2H4zm3%203h4v2H7z'/%3e%3c/svg%3e" target="_blank" alt="picutre email" class="contact-icon icon">
-                            <p>adam.reinvalds@gmail.com</p>
-                        </a>
-                    </div>
-                    <div class="contact-info-container">
-                        <a href="https://www.linkedin.com/in/adam-reinwalds-737783201/" target="_blank">
-                            <img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3e%3cpath%20d='M20%203H4a1%201%200%200%200-1%201v16a1%201%200%200%200%201%201h16a1%201%200%200%200%201-1V4a1%201%200%200%200-1-1zM8.339%2018.337H5.667v-8.59h2.672v8.59zM7.003%208.574a1.548%201.548%200%201%201%200-3.096%201.548%201.548%200%200%201%200%203.096zm11.335%209.763h-2.669V14.16c0-.996-.018-2.277-1.388-2.277-1.39%200-1.601%201.086-1.601%202.207v4.248h-2.667v-8.59h2.56v1.174h.037c.355-.675%201.227-1.387%202.524-1.387%202.704%200%203.203%201.778%203.203%204.092v4.71z'/%3e%3c/svg%3e" alt="picutre linkedin" class="contact-icon icon">
-                            <p>My LinkedIn</p>
-                        </a>
-                    </div>
-                </div>
+            <div>
+              <textarea
+                rows="8"
+                maxlength="400"
+                id="message"
+                name="Message"
+                placeholder="Message"
+                required
+              ></textarea>
+              <input type="submit" value="Submit" id="submit" />
             </div>
-        </section>
+          </form>
+        </div>
+        <div class="contact-info-upper-container">
+          <p class="contact-info-upper-container_p">
+            Alternatively make contact here
+          </p>
+          <div class="contact-info-lower-container">
+            <div class="contact-info-container">
+              <a href="mailto:adam.reinwalds@yh.nackademin.se">
+                <img
+                  src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3e%3cpath%20d='M20%204H6c-1.103%200-2%20.897-2%202v5h2V8l6.4%204.8a1.001%201.001%200%200%200%201.2%200L20%208v9h-8v2h8c1.103%200%202-.897%202-2V6c0-1.103-.897-2-2-2zm-7%206.75L6.666%206h12.668L13%2010.75z'/%3e%3cpath%20d='M2%2012h7v2H2zm2%203h6v2H4zm3%203h4v2H7z'/%3e%3c/svg%3e"
+                  target="_blank"
+                  alt="picutre email"
+                  class="contact-icon icon"
+                />
+                <p>adam.reinvalds@gmail.com</p>
+              </a>
+            </div>
+            <div class="contact-info-container">
+              <a
+                href="https://www.linkedin.com/in/adam-reinwalds-737783201/"
+                target="_blank"
+              >
+                <img
+                  src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3e%3cpath%20d='M20%203H4a1%201%200%200%200-1%201v16a1%201%200%200%200%201%201h16a1%201%200%200%200%201-1V4a1%201%200%200%200-1-1zM8.339%2018.337H5.667v-8.59h2.672v8.59zM7.003%208.574a1.548%201.548%200%201%201%200-3.096%201.548%201.548%200%200%201%200%203.096zm11.335%209.763h-2.669V14.16c0-.996-.018-2.277-1.388-2.277-1.39%200-1.601%201.086-1.601%202.207v4.248h-2.667v-8.59h2.56v1.174h.037c.355-.675%201.227-1.387%202.524-1.387%202.704%200%203.203%201.778%203.203%204.092v4.71z'/%3e%3c/svg%3e"
+                  alt="picutre linkedin"
+                  class="contact-icon icon"
+                />
+                <p>My LinkedIn</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer>
-        <nav class="footer-nav">
-            <div class="nav-links-container">
-                <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-        <p>Copyright &#169; 2025 Adam Reinwalds. All Rights Reserved.</p>
+      <nav class="footer-nav">
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2025 Adam Reinwalds. All Rights Reserved.</p>
     </footer>
-    
-</body>
+  </body>
 </html>
