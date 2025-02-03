@@ -1,252 +1,365 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
-    <link rel="icon" type="image/x-icon" href="/assets/book.png">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaquerys.css">
-    <script defer src="script.js"></script>
-
-</head>
-<body>
+    <link rel="icon" type="image/x-icon" href="/assets/book.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaquerys.css" />
+    <script defer type="module" src="script.js"></script>
+  </head>
+  <body>
     <header>
-        <nav id="desktop-nav">
-            <div class="logo">Adam Reinwalds</div>
-            <div>
-                <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-        <nav id="hamburger-nav">
-            <div class="logo">Adam Reinwalds</div>
-            <div class="hamburger-menu">
-                <div class="hamburger-icon" onclick="toggleMenu()">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <div class="menu-links">
-                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                    <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-                    <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-                </div>
-            </div>
-        </nav>
+      <nav id="desktop-nav">
+        <div class="logo">Adam Reinwalds</div>
+        <div>
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <nav id="hamburger-nav">
+        <div class="logo">Adam Reinwalds</div>
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          </div>
+        </div>
+      </nav>
     </header>
     <main>
-        <section id="profile">
-            <div class="section_pic-container">
-                <img src="/assets/profile.jpg" alt="chicken picture">
-            </div>
-            <div class="section_text">
-                <p class_text_p1>Hello I'm</p>
-                <h1 class="title">Adam Reinwalds</h1>
-                <p class="section_text_p2">.NET Developer</p>
-                <div class="btn-container">
-                    <a href="/assets/CV.pdf" target="_blank" class="primary-button">Download CV</a>
-                    <a href="/#contact" class="primary-button">Contact</a>
-                </div>
-                <div class="socials-container">
-                    <a href="https://www.linkedin.com/in/adam-reinwalds-737783201/" target="_blank"><img src="/assets/linkedin.svg" alt="my linkedin" class="icon"></a>
-                    <a href="https://github.com/AdamReinwalds" target="_blank"><img src="/assets/github.png" alt="my github" class="icon"></a>                         
-                </div>                
-            </div>
-        </section>
+      <section id="profile">
+        <div class="section_pic-container">
+          <img src="/assets/profile.jpg" alt="chicken picture" />
+        </div>
+        <div class="section_text">
+          <p class_text_p1>Hello I'm</p>
+          <h1 class="title">Adam Reinwalds</h1>
+          <p class="section_text_p2">.NET Developer</p>
+          <div class="btn-container">
+            <a href="/assets/CV.pdf" target="_blank" class="primary-button"
+              >Download CV</a
+            >
+            <a href="/#contact" class="primary-button">Contact</a>
+          </div>
+          <div class="socials-container">
+            <a
+              href="https://www.linkedin.com/in/adam-reinwalds-737783201/"
+              target="_blank"
+              ><img src="/assets/linkedin.svg" alt="my linkedin" class="icon"
+            /></a>
+            <a href="https://github.com/AdamReinwalds" target="_blank"
+              ><img src="/assets/github.png" alt="my github" class="icon"
+            /></a>
+          </div>
+        </div>
+      </section>
 
-        <section id="about">
-            <p class="section_text_p1">Get To Know More</p>
-            <h1 class="title">About Me</h1>
-            <div class="section-container">
-                <div class="section_pic-container">
-                    <img src="/assets/profile.jpg" alt="Profile Picture" class="about-pic">
-                </div>
-                <div class="about-details-container">
-                    <div class="about-containers">
-                        <div class="details-container">
-                            <img src="/assets/experience.png" alt="experience icon" class="icon">
-                            <h3>Experience</h3>
-                            <p>Nothing yet<br> LOL </p>
-                        </div>
-                        <div class="details-container">
-                            <img src="/assets/education.png" alt="education icon" class="icon">
-                            <h3>Education</h3>
-                            <p>On going education in <br>.NET Development</p>
-                        </div>
-                    </div>
-                    <div class="text-container">
-                        <p>I have always had a strong interest in computers and software development, which has led me to a career where i can combine passion with profession. I am a driven and proactive individual who constalty strives to grow and learn new things, both profesionally and personally.</p>
-                    </div>
-                </div>
-                <a href="#experience">
-                    <img src="/assets/arrow.png" alt="arrow picture" class="icon-arrow" >
-                </a>
+      <section id="about">
+        <p class="section_text_p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+          <div class="section_pic-container">
+            <img
+              src="/assets/profile.jpg"
+              alt="Profile Picture"
+              class="about-pic"
+            />
+          </div>
+          <div class="about-details-container">
+            <div class="about-containers">
+              <div class="details-container">
+                <img
+                  src="/assets/experience.png"
+                  alt="experience icon"
+                  class="icon"
+                />
+                <h3>Experience</h3>
+                <p>
+                  Nothing yet<br />
+                  LOL
+                </p>
+              </div>
+              <div class="details-container">
+                <img
+                  src="/assets/education.png"
+                  alt="education icon"
+                  class="icon"
+                />
+                <h3>Education</h3>
+                <p>On going education in <br />.NET Development</p>
+              </div>
             </div>
-        </section>
-        <section id="experience">
-            <p class="section_text_p1">Explore My</p>
-            <h1 class="title">Experience</h1>
-            <div class="experience-details-container">
-                <div class="about-containers">
-                    <div class="details-container">
-                        <h2 class="experience-subtitle">Frontend Development</h2>
-                        <div class="article-container">
-                            <article>
-                                <img src="/assets/badge-check-solid-24.png" alt="check icon" class="icon">
-                                <div>
-                                    <h3>HTML</h3>
-                                    <p>Experienced</p>
-                                </div>
-                            </article>
-                            <article>
-                                <img src="/assets/badge-check-solid-24.png" alt="check icon" class="icon">
-                                <div>
-                                    <h3>CSS</h3>
-                                    <p>Experienced</p>
-                                </div>
-                            </article>
-                            <article>
-                                <img src="/assets/badge-check-solid-24.png" alt="check icon" class="icon">
-                                <div>
-                                    <h3>Javascript</h3>
-                                    <p>Intermediate</p>
-                                </div>
-                            </article>
-                            <article>
-                                <img src="/assets/badge-check-solid-24.png" alt="check icon" class="icon">
-                                <div>
-                                    <h3>React</h3>
-                                    <p>Novice</p>
-                                </div>
-                            </article>
-                        </div>
-                    </div>
-                    <div class="details-container">
-                        <h2 class="experience-subtitle">Backend Development</h2>
-                        <div class="article-container">
-                            <article>
-                                <img src="/assets/badge-check-solid-24.png" alt="check icon" class="icon">
-                                <div>
-                                    <h3>C#</h3>
-                                    <p>Experienced</p>
-                                </div>
-                            </article>
-                            <article>
-                                <img src="/assets/badge-check-solid-24.png" alt="check icon" class="icon">
-                                <div>
-                                    <h3>SQL</h3>
-                                    <p>Intermediate</p>
-                                </div>
-                            </article>
-                            <article>
-                                <img src="/assets/badge-check-solid-24.png" alt="check icon" class="icon">
-                                <div>
-                                    <h3>Git</h3>
-                                    <p>Intermediate</p>
-                                </div>
-                            </article>
-                        </div>
-                    </div>
-                </div>
+            <div class="text-container">
+              <p>
+                I have always had a strong interest in computers and software
+                development, which has led me to a career where i can combine
+                passion with profession. I am a driven and proactive individual
+                who constalty strives to grow and learn new things, both
+                profesionally and personally.
+              </p>
             </div>
-            <a href="#projects">
-                <img src="/assets/arrow.png" alt="arrow picture" class="icon-arrow" >
-            </a>
-        </section>
-        <section id="projects">
-            <p class="section_text_p1">Browse My Recent</p>
-            <h1 class="title">Projects</h1>
-            <div class="experience-details-container">
-                <div class="about-containers">
-                    <div class="details-container">
-                        <div class="article-container">
-                            <img src="/assets/projectone.jpg" alt="my github" class="project-image">
-                        </div>
-                        <h2 class="experience-subtitle project-title">Project one</h2>
-                        <a href="" class="primary-button">Github</a>
-                    </div>
-                </div> 
+          </div>
+          <a href="#experience">
+            <img
+              src="/assets/arrow.png"
+              alt="arrow picture"
+              class="icon-arrow"
+            />
+          </a>
+        </div>
+      </section>
+      <section id="experience">
+        <p class="section_text_p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <h2 class="experience-subtitle">Frontend Development</h2>
+              <div class="article-container">
+                <article>
+                  <img
+                    src="/assets/badge-check-solid-24.png"
+                    alt="check icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>HTML</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="/assets/badge-check-solid-24.png"
+                    alt="check icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>CSS</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="/assets/badge-check-solid-24.png"
+                    alt="check icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Javascript</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="/assets/badge-check-solid-24.png"
+                    alt="check icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>React</h3>
+                    <p>Novice</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div class="details-container">
+              <h2 class="experience-subtitle">Backend Development</h2>
+              <div class="article-container">
+                <article>
+                  <img
+                    src="/assets/badge-check-solid-24.png"
+                    alt="check icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>C#</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="/assets/badge-check-solid-24.png"
+                    alt="check icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>SQL</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="/assets/badge-check-solid-24.png"
+                    alt="check icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Git</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="#projects">
+          <img src="/assets/arrow.png" alt="arrow picture" class="icon-arrow" />
+        </a>
+      </section>
+      <section id="projects">
+        <p class="section_text_p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <div class="article-container">
+                <img
+                  src="/assets/projectone.jpg"
+                  alt="my github"
+                  class="project-image"
+                />
+              </div>
+              <h2 class="experience-subtitle project-title">Project one</h2>
+              <a href="" class="primary-button">Github</a>
+            </div>
+          </div>
 
-                <div class="about-containers">
-                    <div class="details-container">
-                        <div class="article-container">
-                            <img src="/assets/projecttwo.jpg" alt="my github" class="project-image">    
-                        </div>
-                        <h2 class="experience-subtitle project-title">Project two</h2>
-                        <a href="" class="primary-button">Github</a>
-                    </div> 
-                </div>    
+          <div class="about-containers">
+            <div class="details-container">
+              <div class="article-container">
+                <img
+                  src="/assets/projecttwo.jpg"
+                  alt="my github"
+                  class="project-image"
+                />
+              </div>
+              <h2 class="experience-subtitle project-title">Project two</h2>
+              <a href="" class="primary-button">Github</a>
+            </div>
+          </div>
 
-                <div class="about-containers">
-                    <div class="details-container">
-                        <div class="article-container">
-                            <img src="/assets/projectthree.jpg" alt="my github" class="project-image">
-                        </div>
-                        <h2 class="experience-subtitle project-title">Project three</h2>
-                        <a href="" class="primary-button">Github</a>
-                    </div> 
-                </div>
-
+          <div class="about-containers">
+            <div class="details-container">
+              <div class="article-container">
+                <img
+                  src="/assets/projectthree.jpg"
+                  alt="my github"
+                  class="project-image"
+                />
+              </div>
+              <h2 class="experience-subtitle project-title">Project three</h2>
+              <a href="" class="primary-button">Github</a>
             </div>
-            <a href="#contact">
-                <img src="/assets/arrow.png" alt="arrow picture" class="icon-arrow" >
-            </a>
-        </section>
-        <section id="contact">
-            <p class="section_text_p1">Get in touch</p>
-            <h1 class="title">Contact Me</h1>
-            <div class="form-container">
-                <p class="form-container_p">Fill out the form below</p>
-                <form action="https://formshow.systementor.se" method="POST" target="_blank" class="form">
-                    <div>
-                        <input type="text" id="name" name="name" placeholder="Name" required>
-                        <input type="email" id="email" name="email" placeholder="Email Address" required>
-                        <input type="text" id="companyname" name="Company Name" placeholder="Company Name">
-                    </div>
-                    <div>
-                        <textarea rows="8" maxlength="400" id="message" name="Message" placeholder="Message" required></textarea>
-                        <input type="submit" value="Submit" id="submit">  
-                    </div>             
-                </form>
+          </div>
+        </div>
+        <a href="#contact">
+          <img src="/assets/arrow.png" alt="arrow picture" class="icon-arrow" />
+        </a>
+      </section>
+      <section id="contact">
+        <p class="section_text_p1">Get in touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="form-container">
+          <p class="form-container_p">Fill out the form below</p>
+          <form
+            action="https://formshow.systementor.se"
+            method="POST"
+            target="_blank"
+            class="form"
+          >
+            <div>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Name"
+                required
+              />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Email Address"
+                required
+              />
+              <input
+                type="text"
+                id="companyname"
+                name="Company Name"
+                placeholder="Company Name"
+              />
             </div>
-            <div class="contact-info-upper-container">
-                <p class="contact-info-upper-container_p">Alternatively make contact here</p>
-                <div class="contact-info-lower-container">
-                    <div class="contact-info-container">
-                        <a href="mailto:adam.reinwalds@yh.nackademin.se">
-                            <img src="/assets/mail-send.svg" target="_blank" alt="picutre email" class="contact-icon icon">
-                            <p>adam.reinvalds@gmail.com</p>
-                        </a>
-                    </div>
-                    <div class="contact-info-container">
-                        <a href="https://www.linkedin.com/in/adam-reinwalds-737783201/" target="_blank">
-                            <img src="/assets/linkedin.svg" alt="picutre linkedin" class="contact-icon icon">
-                            <p>My LinkedIn</p>
-                        </a>
-                    </div>
-                </div>
+            <div>
+              <textarea
+                rows="8"
+                maxlength="400"
+                id="message"
+                name="Message"
+                placeholder="Message"
+                required
+              ></textarea>
+              <input type="submit" value="Submit" id="submit" />
             </div>
-        </section>
+          </form>
+        </div>
+        <div class="contact-info-upper-container">
+          <p class="contact-info-upper-container_p">
+            Alternatively make contact here
+          </p>
+          <div class="contact-info-lower-container">
+            <div class="contact-info-container">
+              <a href="mailto:adam.reinwalds@yh.nackademin.se">
+                <img
+                  src="/assets/mail-send.svg"
+                  target="_blank"
+                  alt="picutre email"
+                  class="contact-icon icon"
+                />
+                <p>adam.reinvalds@gmail.com</p>
+              </a>
+            </div>
+            <div class="contact-info-container">
+              <a
+                href="https://www.linkedin.com/in/adam-reinwalds-737783201/"
+                target="_blank"
+              >
+                <img
+                  src="/assets/linkedin.svg"
+                  alt="picutre linkedin"
+                  class="contact-icon icon"
+                />
+                <p>My LinkedIn</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer>
-        <nav class="footer-nav">
-            <div class="nav-links-container">
-                <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-        <p>Copyright &#169; 2025 Adam Reinwalds. All Rights Reserved.</p>
+      <nav class="footer-nav">
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2025 Adam Reinwalds. All Rights Reserved.</p>
     </footer>
-    
-</body>
+  </body>
 </html>
