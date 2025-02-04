@@ -1,1 +1,1 @@
-My portfolio built in vanilla html, css and js.
+My portfolio built in html, css and js.
