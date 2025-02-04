@@ -151,6 +151,7 @@ section {
 
 #profile {
   display: flex;
+  position: relative;
   justify-content: center;
   gap: 5rem;
   height: 80vh;
