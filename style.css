@@ -157,6 +157,10 @@ section {
   height: 80vh;
 }
 
+.profile-pic {
+  border-radius: 10px;
+}
+
 .section_pic-container {
   display: flex;
   height: 400px;
@@ -191,7 +195,7 @@ section {
   border-radius: 80px;
   font-weight: 600;
   font-size: 30px;
-  color: black;
+  color: hsl(0, 0%, 10%);
   display: inline-block;
   box-shadow: 5px 5px 5px lightgray;
   text-decoration: none;
@@ -201,7 +205,9 @@ section {
 
 .primary-button:hover {
   cursor: pointer;
-  background-color: hsl(0, 0%, 70%);
+  background-color: hsl(0, 0%, 92%);
+  text-decoration: none;
+  color: hsl(0, 0%, 15%);
 }
 
 .title {
@@ -318,8 +324,8 @@ article .icon {
 
 .project-image {
   border-radius: 2rem;
-  width: 90%;
-  height: 90%;
+  height: 150px;
+  width: 300px;
 }
 
 .project-title {
