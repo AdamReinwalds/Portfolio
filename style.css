@@ -396,6 +396,7 @@ footer p {
   text-align: center;
   bottom: 0;
 }
+
 @media screen and (max-width: 1400px) {
   #profile {
     height: 83vh;
@@ -430,6 +431,8 @@ footer p {
   }
 
   .section_pic-container {
+    display: flex;
+    justify-content: center;
     height: 275px;
     margin: 0 auto 2rem;
   }
