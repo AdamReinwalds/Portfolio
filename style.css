@@ -23,10 +23,6 @@ header a {
   display: flex;
 }
 
-/* #desktop-nav, #hamburger-nav {
-    background-color: 
-} */
-
 nav {
   justify-content: space-around;
   align-items: center;
@@ -87,7 +83,7 @@ a:hover {
 
 .menu-links {
   position: absolute;
-  top: 100%;
+  top: 130%;
   right: 0;
   background-color: white;
   width: fit-content;
@@ -113,7 +109,8 @@ a:hover {
 .menu-links.open {
   max-height: 300px;
   z-index: 1;
-  background-color: transparent;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 12px;
 }
 
 .hamburger-icon.open span:first-child {
@@ -202,7 +199,7 @@ section {
   box-shadow: 5px 5px 5px lightgray;
   text-decoration: none;
   width: 17rem;
-  border: rgb(53, 53, 53) solid 0.1rem;
+  border: hsl(0, 0%, 35%) solid 0.1rem;
 }
 
 .primary-button:hover {
@@ -406,6 +403,9 @@ footer p {
   }
   .about-containers {
     flex-wrap: wrap;
+  }
+  .icon-arrow {
+    visibility: hidden;
   }
 }
 

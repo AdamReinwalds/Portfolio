@@ -5,4 +5,5 @@ function toggleMenu() {
   icon.classList.toggle("open");
 }
 
-window.toggleMenu = toggleMenu;
+document.querySelector(".hamburger-icon").addEventListener("click", toggleMenu);
+document.querySelector(".menu-links a").addEventListener("click", toggleMenu);
