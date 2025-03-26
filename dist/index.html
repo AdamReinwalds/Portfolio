@@ -5,9 +5,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
-    <link rel="icon" type="image/x-icon" href="./assets/book-wXpvC12U.png" />
-    <script type="module" crossorigin src="./assets/index-BDpe3RRj.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-BT8AO-Ko.css">
+    <link rel="icon" type="image/x-icon" href="./assets/book-wXpvC12U.png" />
+    <script defer src="main.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-CHiFjMdh.css">
   </head>
   <body>
     <header>
@@ -15,26 +15,36 @@
         <div class="logo">Adam Reinwalds</div>
         <div>
           <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li>
+              <a onclick="scrollToElementId('about')">About</a>
+            </li>
+            <li><a onclick="scrollToElementId('experience')">Experience</a></li>
+            <li><a onclick="scrollToElementId('projects')">Projects</a></li>
+            <li><a onclick="scrollToElementId('contact')">Contact</a></li>
           </ul>
         </div>
       </nav>
       <nav id="hamburger-nav">
         <div class="logo">Adam Reinwalds</div>
         <div class="hamburger-menu">
-          <div class="hamburger-icon" onclick="toggleMenu()">
+          <div class="hamburger-icon">
             <span></span>
             <span></span>
             <span></span>
           </div>
           <div class="menu-links">
-            <li><a href="#about" onclick="toggleMenu()">About</a></li>
-            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            <li>
+              <a onclick="scrollToElementId('about')">About</a>
+            </li>
+            <li>
+              <a onclick="scrollToElementId('experience')">Experience</a>
+            </li>
+            <li>
+              <a onclick="scrollToElementId('projects')">Projects</a>
+            </li>
+            <li>
+              <a onclick="scrollToElementId('contact')">Contact</a>
+            </li>
           </div>
         </div>
       </nav>
@@ -43,18 +53,17 @@
     <main>
       <section id="profile">
         <div class="section_pic-container">
-          <img
-            src="./assets/profile-IQlFS8Pp.jpg"
-            alt="chicken picture"
-            class="profile-pic"
-          />
+          <img src="./assets/me-uG-rO24-.jpg" alt="profile picture" class="profile-pic" />
         </div>
         <div class="section_text">
           <p class_text_p1>Hello I'm</p>
           <h1 class="title">Adam Reinwalds</h1>
           <p class="section_text_p2">.NET Developer</p>
           <div class="btn-container">
-            <a href="/assets/CV.pdf" target="_blank" class="primary-button"
+            <a
+              href="/CV-AdamReinwalds.pdf"
+              target="_blank"
+              class="primary-button"
               >Download CV</a
             >
             <a href="#contact" class="primary-button">Contact</a>
@@ -324,10 +333,10 @@
       <nav class="footer-nav">
         <div class="nav-links-container">
           <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a onclick="scrollToElementId('about')">About</a></li>
+            <li><a onclick="scrollToElementId('experience')">Experience</a></li>
+            <li><a onclick="scrollToElementId('projects')">Projects</a></li>
+            <li><a onclick="scrollToElementId('contact')">Contact</a></li>
           </ul>
         </div>
       </nav>

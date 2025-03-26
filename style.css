@@ -44,7 +44,8 @@ a:hover {
   color: grey;
   text-decoration: underline;
   text-underline-offset: 0.5rem;
-  text-decoration-color: hsl(0, 0%, 70%);
+  text-decoration-color: hsl(0, 0%, 60%);
+  cursor: pointer;
 }
 
 .logo {
@@ -404,9 +405,6 @@ footer p {
   .about-containers {
     flex-wrap: wrap;
   }
-  .icon-arrow {
-    visibility: hidden;
-  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -490,6 +488,7 @@ footer p {
   .nav-links li a {
     font-size: 1rem;
   }
+
   .experience-subtitle {
     font-size: 1.25rem;
   }
