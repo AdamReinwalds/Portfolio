@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
     <link rel="icon" type="image/x-icon" href="./assets/book-wXpvC12U.png" />
-    <script type="module" crossorigin src="./assets/index-DSgc3NCm.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-CHiFjMdh.css">
+    <script defer src="main.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-D-c8vv95.css">
   </head>
   <body>
     <header>
@@ -15,10 +15,12 @@
         <div class="logo">Adam Reinwalds</div>
         <div>
           <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li>
+              <a onclick="scrollToElementId('about')">About</a>
+            </li>
+            <li><a onclick="scrollToElementId('experience')">Experience</a></li>
+            <li><a onclick="scrollToElementId('projects')">Projects</a></li>
+            <li><a onclick="scrollToElementId('contact')">Contact</a></li>
           </ul>
         </div>
       </nav>
@@ -32,16 +34,16 @@
           </div>
           <div class="menu-links">
             <li>
-              <a href="#about">About</a>
+              <a onclick="scrollToElementId('about')">About</a>
             </li>
             <li>
-              <a href="#experience">Experience</a>
+              <a onclick="scrollToElementId('experience')">Experience</a>
             </li>
             <li>
-              <a href="#projects">Projects</a>
+              <a onclick="scrollToElementId('projects')">Projects</a>
             </li>
             <li>
-              <a href="#contact">Contact</a>
+              <a onclick="scrollToElementId('contact')">Contact</a>
             </li>
           </div>
         </div>
@@ -51,18 +53,17 @@
     <main>
       <section id="profile">
         <div class="section_pic-container">
-          <img
-            src="./assets/profile-IQlFS8Pp.jpg"
-            alt="chicken picture"
-            class="profile-pic"
-          />
+          <img src="./assets/me-uG-rO24-.jpg" alt="profile picture" class="profile-pic" />
         </div>
         <div class="section_text">
           <p class_text_p1>Hello I'm</p>
           <h1 class="title">Adam Reinwalds</h1>
           <p class="section_text_p2">.NET Developer</p>
           <div class="btn-container">
-            <a href="/CV.pdf" target="_blank" class="primary-button"
+            <a
+              href="/CV-AdamReinwalds.pdf"
+              target="_blank"
+              class="primary-button"
               >Download CV</a
             >
             <a href="#contact" class="primary-button">Contact</a>
@@ -77,7 +78,7 @@
               ><img src="./assets/github-DzGq4Dyy.png" alt="my github" class="icon"
             /></a>
           </div>
-          <a href="#about">
+          <a onclick="scrollToElementId('about')">
             <img
               src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAcBJREFUSEuNVtGhgzAIPDbRTdpROkm7ib5Juoqb8AqSBBLS2h81Jhx3HFgiAIxvP9uhl7j761l3rEZvBwgENmAPAORB/Wq8lyc7FQO19YTdsHXO5QSYxfitX6WUKFhzTHnPSPtcruJXiVT3H5Hz175mMQVq1GxTTOsJ4A/AcR4bXLQwcANoz71ImAIQ8PyweYE1+L2BlAxpIfDGhBuYHgTeC/ue5cxFC4A3ALn2ILK2EXBjfUdrLm9hYPQT7y/gAUR2b1BpFHj91aaRge12NE8mhAVMB8ASVHSX+3nw0itD90YBn2Atsvzen2KK7tLhJXMBFyb7YN8AkHtPHPQSGQi4n/OK3uoWwgrW2hSpHgoyNEbnomY1taxYsBWZcLfhJNn74F0d4hwLo8L3hGUqukvW1UmWpGZOwMEnm9AmfmyEPvDNMhRZs6aDwIc1l9yv30c9rNF8AgbfLKsvfU/Is8oyH9JO7GHTbCwaiO1Xe+bDLs7ysQZjHzgHqk1FIg3fsYyIDid5MZuO3aSsX72kyGUpVLx+nxN1rw7/buIFia58TJJemk1q/ZPgbDqn2YCv0WiTVaTu7ZDEmM0rvz7pIfwDFrLpIUMRolAAAAAASUVORK5CYII="
               alt="arrow picture"
@@ -131,7 +132,7 @@
               </p>
             </div>
           </div>
-          <a href="#experience">
+          <a onclick="scrollToElementId('experience')">
             <img
               src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAcBJREFUSEuNVtGhgzAIPDbRTdpROkm7ib5Juoqb8AqSBBLS2h81Jhx3HFgiAIxvP9uhl7j761l3rEZvBwgENmAPAORB/Wq8lyc7FQO19YTdsHXO5QSYxfitX6WUKFhzTHnPSPtcruJXiVT3H5Hz175mMQVq1GxTTOsJ4A/AcR4bXLQwcANoz71ImAIQ8PyweYE1+L2BlAxpIfDGhBuYHgTeC/ue5cxFC4A3ALn2ILK2EXBjfUdrLm9hYPQT7y/gAUR2b1BpFHj91aaRge12NE8mhAVMB8ASVHSX+3nw0itD90YBn2Atsvzen2KK7tLhJXMBFyb7YN8AkHtPHPQSGQi4n/OK3uoWwgrW2hSpHgoyNEbnomY1taxYsBWZcLfhJNn74F0d4hwLo8L3hGUqukvW1UmWpGZOwMEnm9AmfmyEPvDNMhRZs6aDwIc1l9yv30c9rNF8AgbfLKsvfU/Is8oyH9JO7GHTbCwaiO1Xe+bDLs7ysQZjHzgHqk1FIg3fsYyIDid5MZuO3aSsX72kyGUpVLx+nxN1rw7/buIFia58TJJemk1q/ZPgbDqn2YCv0WiTVaTu7ZDEmM0rvz7pIfwDFrLpIUMRolAAAAAASUVORK5CYII="
               alt="arrow picture"
@@ -234,7 +235,7 @@
             </div>
           </div>
         </div>
-        <a href="#projects">
+        <a onclick="scrollToElementId('projects')">
           <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAcBJREFUSEuNVtGhgzAIPDbRTdpROkm7ib5Juoqb8AqSBBLS2h81Jhx3HFgiAIxvP9uhl7j761l3rEZvBwgENmAPAORB/Wq8lyc7FQO19YTdsHXO5QSYxfitX6WUKFhzTHnPSPtcruJXiVT3H5Hz175mMQVq1GxTTOsJ4A/AcR4bXLQwcANoz71ImAIQ8PyweYE1+L2BlAxpIfDGhBuYHgTeC/ue5cxFC4A3ALn2ILK2EXBjfUdrLm9hYPQT7y/gAUR2b1BpFHj91aaRge12NE8mhAVMB8ASVHSX+3nw0itD90YBn2Atsvzen2KK7tLhJXMBFyb7YN8AkHtPHPQSGQi4n/OK3uoWwgrW2hSpHgoyNEbnomY1taxYsBWZcLfhJNn74F0d4hwLo8L3hGUqukvW1UmWpGZOwMEnm9AmfmyEPvDNMhRZs6aDwIc1l9yv30c9rNF8AgbfLKsvfU/Is8oyH9JO7GHTbCwaiO1Xe+bDLs7ysQZjHzgHqk1FIg3fsYyIDid5MZuO3aSsX72kyGUpVLx+nxN1rw7/buIFia58TJJemk1q/ZPgbDqn2YCv0WiTVaTu7ZDEmM0rvz7pIfwDFrLpIUMRolAAAAAASUVORK5CYII=" alt="arrow picture" class="icon-arrow" />
         </a>
       </section>
@@ -291,7 +292,7 @@
             </div>
           </div>
         </div>
-        <a href="#contact">
+        <a onclick="scrollToElementId('contact')">
           <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAcBJREFUSEuNVtGhgzAIPDbRTdpROkm7ib5Juoqb8AqSBBLS2h81Jhx3HFgiAIxvP9uhl7j761l3rEZvBwgENmAPAORB/Wq8lyc7FQO19YTdsHXO5QSYxfitX6WUKFhzTHnPSPtcruJXiVT3H5Hz175mMQVq1GxTTOsJ4A/AcR4bXLQwcANoz71ImAIQ8PyweYE1+L2BlAxpIfDGhBuYHgTeC/ue5cxFC4A3ALn2ILK2EXBjfUdrLm9hYPQT7y/gAUR2b1BpFHj91aaRge12NE8mhAVMB8ASVHSX+3nw0itD90YBn2Atsvzen2KK7tLhJXMBFyb7YN8AkHtPHPQSGQi4n/OK3uoWwgrW2hSpHgoyNEbnomY1taxYsBWZcLfhJNn74F0d4hwLo8L3hGUqukvW1UmWpGZOwMEnm9AmfmyEPvDNMhRZs6aDwIc1l9yv30c9rNF8AgbfLKsvfU/Is8oyH9JO7GHTbCwaiO1Xe+bDLs7ysQZjHzgHqk1FIg3fsYyIDid5MZuO3aSsX72kyGUpVLx+nxN1rw7/buIFia58TJJemk1q/ZPgbDqn2YCv0WiTVaTu7ZDEmM0rvz7pIfwDFrLpIUMRolAAAAAASUVORK5CYII=" alt="arrow picture" class="icon-arrow" />
         </a>
       </section>
@@ -332,10 +333,10 @@
       <nav class="footer-nav">
         <div class="nav-links-container">
           <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a onclick="scrollToElementId('about')">About</a></li>
+            <li><a onclick="scrollToElementId('experience')">Experience</a></li>
+            <li><a onclick="scrollToElementId('projects')">Projects</a></li>
+            <li><a onclick="scrollToElementId('contact')">Contact</a></li>
           </ul>
         </div>
       </nav>
