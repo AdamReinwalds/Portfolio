@@ -16,3 +16,8 @@ function scrollToElementId(id) {
   });
   console.log("scrolling to", id);
 }
+function scrollToTop() {
+  document.body.scrollIntoView({
+    behavior: "smooth",
+  });
+}
