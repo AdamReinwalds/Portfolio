@@ -6,7 +6,7 @@
     <title>My Portfolio</title>
     <link rel="icon" type="image/x-icon" href="/assets/book.png" />
     <link rel="stylesheet" href="style.css" />
-    <script defer src="main.js"></script>
+    <script defer type="module" src="main.js"></script>
   </head>
   <body>
     <header>
@@ -15,30 +15,18 @@
         <div>
           <ul class="nav-links">
             <li>
-              <a href="javascript:void(0);" onclick="scrollToElementId('about')"
-                >About</a
-              >
+              <a href="javascript:void(0);" data-scroll="about">About</a>
             </li>
             <li>
-              <a
-                href="javascript:void(0);"
-                onclick="scrollToElementId('experience')"
+              <a href="javascript:void(0);" data-scroll="experience"
                 >Experience</a
               >
             </li>
             <li>
-              <a
-                href="javascript:void(0);"
-                onclick="scrollToElementId('projects')"
-                >Projects</a
-              >
+              <a href="javascript:void(0);" data-scroll="projects">Projects</a>
             </li>
             <li>
-              <a
-                href="javascript:void(0);"
-                onclick="scrollToElementId('contact')"
-                >Contact</a
-              >
+              <a href="javascript:void(0);" data-scroll="contact">Contact</a>
             </li>
           </ul>
         </div>
@@ -53,30 +41,18 @@
           </div>
           <div class="menu-links">
             <li>
-              <a href="javascript:void(0);" onclick="scrollToElementId('about')"
-                >About</a
-              >
+              <a href="javascript:void(0);" data-scroll="about">About</a>
             </li>
             <li>
-              <a
-                href="javascript:void(0);"
-                onclick="scrollToElementId('experience')"
+              <a href="javascript:void(0);" data-scroll="experience"
                 >Experience</a
               >
             </li>
             <li>
-              <a
-                href="javascript:void(0);"
-                onclick="scrollToElementId('projects')"
-                >Projects</a
-              >
+              <a href="javascript:void(0);" data-scroll="projects">Projects</a>
             </li>
             <li>
-              <a
-                href="javascript:void(0);"
-                onclick="scrollToElementId('contact')"
-                >Contact</a
-              >
+              <a href="javascript:void(0);" data-scroll="contact">Contact</a>
             </li>
           </div>
         </div>
@@ -111,7 +87,7 @@
               ><img src="/assets/github.png" alt="my github" class="icon"
             /></a>
           </div>
-          <a onclick="scrollToElementId('about')">
+          <a data-scroll="about">
             <img
               src="/assets/arrow.png"
               alt="arrow picture"
@@ -165,7 +141,7 @@
               </p>
             </div>
           </div>
-          <a onclick="scrollToElementId('experience')">
+          <a data-scroll="experience">
             <img
               src="/assets/arrow.png"
               alt="arrow picture"
@@ -268,7 +244,7 @@
             </div>
           </div>
         </div>
-        <a onclick="scrollToElementId('projects')">
+        <a data-scroll="projects">
           <img src="/assets/arrow.png" alt="arrow picture" class="icon-arrow" />
         </a>
       </section>
@@ -325,7 +301,7 @@
             </div>
           </div>
         </div>
-        <a onclick="scrollToElementId('contact')">
+        <a data-scroll="contact">
           <img src="/assets/arrow.png" alt="arrow picture" class="icon-arrow" />
         </a>
       </section>
@@ -342,7 +318,7 @@
                   alt="picutre email"
                   class="contact-icon icon"
                 />
-                <p>adam.reinvalds@gmail.com</p>
+                <p>adam.reinwalds@yh.nackademin.se</p>
               </a>
             </div>
             <div class="contact-info-container">
@@ -366,10 +342,10 @@
       <nav class="footer-nav">
         <div class="nav-links-container">
           <ul class="nav-links">
-            <li><a onclick="scrollToTop()">↑ Top</a></li>
-            <li><a onclick="scrollToElementId('about')">About</a></li>
-            <li><a onclick="scrollToElementId('experience')">Experience</a></li>
-            <li><a onclick="scrollToElementId('projects')">Projects</a></li>
+            <li><a data-scroll-top>↑ Top</a></li>
+            <li><a data-scroll="about">About</a></li>
+            <li><a data-scroll="experience">Experience</a></li>
+            <li><a data-scroll="projects">Projects</a></li>
           </ul>
         </div>
       </nav>
