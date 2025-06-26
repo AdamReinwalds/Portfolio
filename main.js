@@ -14,7 +14,6 @@ function scrollToElementId(id) {
   document.getElementById(id).scrollIntoView({
     behavior: "smooth",
   });
-  console.log("scrolling to", id);
 }
 function scrollToTop() {
   document.body.scrollIntoView({
