@@ -339,6 +339,10 @@ article .icon {
   color: black;
 }
 
+.project-description {
+  min-height: 90px;
+}
+
 /* Contact */
 
 #contact {

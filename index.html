@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
+    <title>Portfolio</title>
     <link rel="icon" type="image/x-icon" href="/assets/book.png" />
     <link rel="stylesheet" href="style.css" />
     <script defer type="module" src="main.js"></script>
@@ -73,7 +73,7 @@
               href="/CV - Adam Reinwalds.pdf"
               target="_blank"
               class="primary-button"
-              >Download CV</a
+              >CV</a
             >
             <a href="#contact" class="primary-button">Contact</a>
           </div>
@@ -164,7 +164,6 @@
                   />
                   <div>
                     <h3>HTML</h3>
-                    <p>Experienced</p>
                   </div>
                 </article>
                 <article>
@@ -175,7 +174,6 @@
                   />
                   <div>
                     <h3>CSS</h3>
-                    <p>Experienced</p>
                   </div>
                 </article>
                 <article>
@@ -186,7 +184,6 @@
                   />
                   <div>
                     <h3>Javascript</h3>
-                    <p>Intermediate</p>
                   </div>
                 </article>
                 <article>
@@ -197,7 +194,6 @@
                   />
                   <div>
                     <h3>React</h3>
-                    <p>Novice</p>
                   </div>
                 </article>
               </div>
@@ -213,7 +209,16 @@
                   />
                   <div>
                     <h3>C#</h3>
-                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="/assets/badge-check-solid-24.png"
+                    alt="check icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>.NET</h3>
                   </div>
                 </article>
                 <article>
@@ -224,7 +229,6 @@
                   />
                   <div>
                     <h3>SQL</h3>
-                    <p>Intermediate</p>
                   </div>
                 </article>
                 <article>
@@ -235,7 +239,6 @@
                   />
                   <div>
                     <h3>Git</h3>
-                    <p>Intermediate</p>
                   </div>
                 </article>
               </div>
@@ -251,7 +254,10 @@
         <h1 class="title">Projects</h1>
         <div class="experience-details-container">
           <div class="about-containers">
-            <div class="details-container">
+            <div
+              class="details-container"
+              data-github='["https://github.com/AdamReinwalds/movie-booking"]'
+            >
               <div class="article-container">
                 <img
                   src="/assets/movie-booking.png"
@@ -262,6 +268,11 @@
               <h2 class="experience-subtitle project-title">
                 Movie bookig site
               </h2>
+              <p class="project-description">
+                A movie booking site where users can browse and book tickets for
+                movies. Built with React using json-server to simulate a
+                backend.
+              </p>
               <a
                 href="https://github.com/AdamReinwalds/movie-booking"
                 class="primary-button"
@@ -275,13 +286,23 @@
             <div class="details-container">
               <div class="article-container">
                 <img
-                  src="/assets/projecttwo.jpg"
+                  src="/assets/Ventixe-Events.png"
                   alt="my github"
                   class="project-image"
                 />
               </div>
-              <h2 class="experience-subtitle project-title">Project two</h2>
-              <a href="" class="primary-button">Github</a>
+              <h2 class="experience-subtitle project-title">Ventixe</h2>
+              <p class="project-description">
+                Ventixe is a collaborative web application for event management,
+                built with a .NET microservices backend and an ASP.NET MVC
+                frontend.
+              </p>
+              <a
+                href="https://github.com/ventixeprog24"
+                class="primary-button"
+                target="_blank"
+                >Github</a
+              >
             </div>
           </div>
 
@@ -289,13 +310,22 @@
             <div class="details-container">
               <div class="article-container">
                 <img
-                  src="/assets/projectthree.jpg"
+                  src="/assets/Alpha.png"
                   alt="my github"
                   class="project-image"
                 />
               </div>
-              <h2 class="experience-subtitle project-title">Project three</h2>
-              <a href="" class="primary-button">Github</a>
+              <h2 class="experience-subtitle project-title">Alpha</h2>
+              <p class="project-description">
+                A project management application with frontend built in React
+                and backend in .NET hosted on Azure.
+              </p>
+              <a
+                target="_blank"
+                href="https://github.com/AdamReinwalds/Alpha"
+                class="primary-button"
+                >Github</a
+              >
             </div>
           </div>
         </div>
@@ -349,5 +379,14 @@
       </nav>
       <p>Copyright &#169; 2025 Adam Reinwalds. All Rights Reserved.</p>
     </footer>
+    <div id="project-modal" class="modal">
+      <div class="modal-content">
+        <span id="modal-close" class="close">&times;</span>
+        <h2 id="modal-title"></h2>
+        <img id="modal-image" src="" alt="Project Image" />
+        <p id="modal-description">hejhej</p>
+        <div id="modal-links"></div>
+      </div>
+    </div>
   </body>
 </html>
